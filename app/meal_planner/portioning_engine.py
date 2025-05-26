@@ -32,8 +32,9 @@ def portion_meal_template(
         "totals": {"protein_g": 0, "fat_g": 0, "carbs_g": 0, "calories": 0},
         "tags": template.get("tags", [])
     }
-    protein_name = template["components"].get("protein", "")
-    carb_name = template["components"].get("carb", "")
+    components = template.get("components", {})
+    protein_name = components.get("protein", "")
+    carb_name = components.get("carb", "")
     def find_food_in_db(food_name, df):
         rows = df[df["standardized_food_name"].str.lower() == food_name.lower()]
         if not rows.empty:
@@ -47,38 +48,50 @@ def portion_meal_template(
     protein_category = protein_row["category"] if protein_row is not None else "Unknown"
     carb_category = carb_row["category"] if carb_row is not None else "Unknown"
     combo_constraints = get_combo_constraints(protein_category, carb_category, meal_type)
-    for macro_type, item_name in template["components"].items():
+    for macro_type in ["protein", "carb", "fat", "vegetables", "fruits"]:
+        item_value = components.get(macro_type)
+        if not item_value:  # Handles None, empty string, empty list, or missing
+            continue
         if macro_type == "vegetables":
             veggies = []
-            for veg in item_name:
-                row = df[df["standardized_food_name"].str.lower() == veg.lower()]
-                if row.empty:
-                    continue
-                portion = 50
-                calories = (row.iloc[0]["calories"] * portion) / 100
-                veggies.append({
-                    "item": veg,
-                    "portion": f"{portion}g",
-                    "calories": round(calories, 1)
-                })
-                result["totals"]["calories"] += calories
+            if isinstance(item_value, list):
+                for veg in item_value:
+                    if not veg:
+                        continue
+                    row = df[df["standardized_food_name"].str.lower() == veg.lower()]
+                    if row.empty:
+                        continue
+                    portion = 50
+                    calories = (row.iloc[0]["calories"] * portion) / 100
+                    veggies.append({
+                        "item": veg,
+                        "portion": f"{portion}g",
+                        "calories": round(calories, 1)
+                    })
+                    result["totals"]["calories"] += calories
             result["components"][macro_type] = veggies
         elif macro_type == "fruits":
             fruits = []
-            for fruit in item_name:
-                row = df[df["standardized_food_name"].str.lower() == fruit.lower()]
-                if row.empty:
-                    continue
-                portion = 100
-                calories = (row.iloc[0]["calories"] * portion) / 100
-                fruits.append({
-                    "item": fruit,
-                    "portion": f"{portion}g",
-                    "calories": round(calories, 1)
-                })
-                result["totals"]["calories"] += calories
+            if isinstance(item_value, list):
+                for fruit in item_value:
+                    if not fruit:
+                        continue
+                    row = df[df["standardized_food_name"].str.lower() == fruit.lower()]
+                    if row.empty:
+                        continue
+                    portion = 100
+                    calories = (row.iloc[0]["calories"] * portion) / 100
+                    fruits.append({
+                        "item": fruit,
+                        "portion": f"{portion}g",
+                        "calories": round(calories, 1)
+                    })
+                    result["totals"]["calories"] += calories
             result["components"][macro_type] = fruits
         else:
+            item_name = item_value
+            if not item_name:
+                continue
             macro_lookup = "carbs" if macro_type == "carb" else macro_type
             item_row = find_food_in_db(item_name, df)
             if item_row is None:
@@ -111,6 +124,7 @@ def portion_meal_template(
             result["totals"]["fat_g"] += round((item_row["fat_g"] * grams) / 100, 1)
             result["totals"]["carbs_g"] += round((item_row["carbs_g"] * grams) / 100, 1)
             result["totals"]["calories"] += round(calories, 1)
+
     return result
 
 def portion_all_templates(

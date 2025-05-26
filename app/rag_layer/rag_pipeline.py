@@ -21,6 +21,27 @@ FAISS_INDEX_DIR = "data/faiss_index/"
 MEAL_INDEX_PATH = os.path.join(FAISS_INDEX_DIR, "meal_index")
 WORKOUT_INDEX_PATH = os.path.join(FAISS_INDEX_DIR, "workout_index")
 
+# --- Caching vector DBs at module level ---
+_meal_vector_db = None
+_workout_vector_db = None
+
+
+def get_meal_vector_db():
+    global _meal_vector_db
+    if _meal_vector_db is None:
+        docs = load_rag_docs()
+        chunks = chunk_docs(docs)
+        _meal_vector_db = embed_and_index_chunks(chunks, index_path=MEAL_INDEX_PATH, docs=docs)
+    return _meal_vector_db
+
+def get_workout_vector_db():
+    global _workout_vector_db
+    if _workout_vector_db is None:
+        docs = load_rag_docs()
+        chunks = chunk_docs(docs)
+        _workout_vector_db = embed_and_index_chunks(chunks, index_path=WORKOUT_INDEX_PATH, docs=docs)
+    return _workout_vector_db
+
 # --- 1. Load Documents ---
 def load_rag_docs(doc_dir: str = RAG_DOCS_DIR) -> List[str]:
     """
@@ -69,15 +90,32 @@ def chunk_docs(docs: List[str], chunk_size: int = 800) -> List[str]:
     return chunks
 
 # --- 3. Embed and Index Chunks with Caching and Invalidation ---
-def embed_and_index_chunks(chunks: List[str], index_path: str = MEAL_INDEX_PATH, docs: List[str] = None) -> FAISS:
+def embed_and_index_chunks(
+    chunks: List[str],
+    index_path: str = MEAL_INDEX_PATH,
+    docs: List[str] = None,
+    embedding_model_name: str = None
+) -> FAISS:
     """
     Embed chunks using OpenAIEmbeddings and store/load FAISS vector DB from disk, with embedding caching.
     If index exists and hash matches, load it. Otherwise, build, cache embeddings, save index, and return.
     Embedding cache is keyed by a hash of the docs/chunks. If the docs change, cache is invalidated.
     """
+    import os
+    import os.path
+    from datetime import datetime
+    # Deterministic doc ordering for stable hash
+    if docs is not None:
+        docs = list(docs)
+        docs.sort()  # sort docs for deterministic hash
+    # Allow embedding model override via env or argument
+    if embedding_model_name is None:
+        embedding_model_name = os.environ.get("OPENAI_EMBEDDING_MODEL", "text-embedding-ada-002")
+    print(f"[RAG] Using embedding model: {embedding_model_name}")
     os.makedirs(os.path.dirname(index_path), exist_ok=True)
-    embeddings_model = OpenAIEmbeddings()
+    embeddings_model = OpenAIEmbeddings(model=embedding_model_name)
     docs_hash = _get_docs_hash(docs) if docs is not None else None
+    print(f"[RAG] Docs hash: {docs_hash}")
     hash_path = _hash_path(index_path)
     emb_cache_path = index_path + ".embeddings.cache"
     index_exists = os.path.exists(index_path)
@@ -86,25 +124,21 @@ def embed_and_index_chunks(chunks: List[str], index_path: str = MEAL_INDEX_PATH,
     if index_exists and hash_exists and docs_hash:
         with open(hash_path, 'r') as f:
             stored_hash = f.read().strip()
+        print(f"[RAG] Stored hash: {stored_hash}")
         if stored_hash == docs_hash:
             hash_matches = True
     if index_exists and hash_matches:
         try:
+            # Only load, never recompute embeddings if cache is valid!
             vector_db = FAISS.load_local(index_path, embeddings_model)
             print(f"[RAG] FAISS index and doc hash match: loaded index from {index_path}")
-            # Try to load cached embeddings for transparency (not strictly needed for FAISS, but for future use)
-            emb_cached = cache_embeddings(chunks, None, emb_cache_path, mode='load')
-            if emb_cached is not None:
-                print(f"[RAG] Embedding cache hit for {emb_cache_path}")
-            else:
-                print(f"[RAG] Embedding cache miss for {emb_cache_path}")
+            print(f"[RAG] [CACHE-HIT] {datetime.now().isoformat()}")
             return vector_db
         except Exception as e:
             print(f"Warning: Failed to load FAISS index, rebuilding. Error: {e}")
     # If no valid index or hash mismatch, recompute embeddings and index
     try:
         print(f"[RAG] Building embeddings and FAISS index from scratch for {index_path}")
-        # Compute embeddings and save to cache
         embeddings = embeddings_model.embed_documents(chunks)
         cache_embeddings(chunks, embeddings, emb_cache_path, mode='save')
         print(f"[RAG] Saved embeddings to cache {emb_cache_path}")
@@ -113,6 +147,7 @@ def embed_and_index_chunks(chunks: List[str], index_path: str = MEAL_INDEX_PATH,
         if docs_hash:
             with open(hash_path, 'w') as f:
                 f.write(docs_hash)
+        print(f"[RAG] [CACHE-MISS/REBUILD] {datetime.now().isoformat()}")
         return vector_db
     except Exception as e:
         raise RuntimeError(f"Embedding/indexing failed: {e}")
@@ -129,7 +164,7 @@ def _hash_path(index_path: str) -> str:
     return index_path + ".hash"
 
 # --- 4. Retrieve Context ---
-def retrieve_context(query: str, vector_db, top_k: int = 5) -> str:
+def retrieve_context(query: str, vector_db, top_k: int = 3) -> str:
     """
     Retrieve top_k relevant chunks from the vector DB for the given query.
     Uses disk-based caching for retrieval results.
@@ -158,7 +193,7 @@ def assemble_prompt(template: str, context: str, **kwargs) -> str:
         raise RuntimeError(f"Prompt assembly failed: {e}")
 
 # --- 6. LLM Call ---
-def call_llm(prompt: str, model: str = "gpt-4o", max_tokens: int = 2048, temperature: float = 0.2) -> str:
+def call_llm(prompt: str, model: str = "gpt-4.1", max_tokens: int = 2048, temperature: float = 0.2) -> str:
     """
     Call the LLM using LangChain's ChatOpenAI and return the response.
     """

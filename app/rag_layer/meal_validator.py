@@ -1,4 +1,5 @@
 import json
+import re
 from typing import Tuple, Dict, Any, List
 from app.user import UserProfile
 from app.rag_layer.rag_pipeline import (
@@ -6,8 +7,13 @@ from app.rag_layer.rag_pipeline import (
 )
 from app.rag_layer.prompts import MEAL_DAY_VALIDATION_PROMPT
 
-# Placeholder for future RAG/LLM imports (e.g., LangChain, OpenAI)
-# from langchain import ...
+# Helper to clean LLM output
+
+def clean_llm_json_output(llm_response: str) -> str:
+    """
+    Remove code fences (```json ... ```) from LLM output before JSON parsing.
+    """
+    return re.sub(r"^```(?:json)?\s*|```$", "", llm_response.strip(), flags=re.IGNORECASE | re.MULTILINE).strip()
 
 
 def validate_meal_day(day_plan: Dict[str, Any], user_profile: UserProfile, date: str = None, **kwargs) -> Tuple[Dict[str, Any], str]:
@@ -16,11 +22,11 @@ def validate_meal_day(day_plan: Dict[str, Any], user_profile: UserProfile, date:
     Returns revised_day_plan (dict) and explanation (str).
     Raises Exception on error or invalid output.
     """
-    docs = load_rag_docs()
-    chunks = chunk_docs(docs)
-    vector_db = embed_and_index_chunks(chunks)
+    from app.rag_layer.rag_pipeline import get_meal_vector_db
+    vector_db = get_meal_vector_db()
     query = f"Validate this meal plan: {day_plan} for user: {user_profile.to_dict()}"
     context = retrieve_context(query, vector_db, top_k=5)
+    print("[RAG][DEBUG] Retrieved context for meal validation:\n", context)
     prompt = assemble_prompt(
         MEAL_DAY_VALIDATION_PROMPT,
         context,
@@ -30,7 +36,8 @@ def validate_meal_day(day_plan: Dict[str, Any], user_profile: UserProfile, date:
     )
     llm_response = call_llm(prompt, model=kwargs.get("model", "gpt-4o"))
     try:
-        result = json.loads(llm_response)
+        cleaned = clean_llm_json_output(llm_response)
+        result = json.loads(cleaned)
         revised_plan = result.get("revised_plan")
         if revised_plan is None:
             raise ValueError("Missing 'revised_plan' in LLM output.")
