@@ -71,13 +71,15 @@ def chunk_docs(docs: List[str], chunk_size: int = 800) -> List[str]:
 # --- 3. Embed and Index Chunks with Caching and Invalidation ---
 def embed_and_index_chunks(chunks: List[str], index_path: str = MEAL_INDEX_PATH, docs: List[str] = None) -> FAISS:
     """
-    Embed chunks using OpenAIEmbeddings and store/load FAISS vector DB from disk.
-    If index exists and hash matches, load it. Otherwise, build, save, and return.
+    Embed chunks using OpenAIEmbeddings and store/load FAISS vector DB from disk, with embedding caching.
+    If index exists and hash matches, load it. Otherwise, build, cache embeddings, save index, and return.
+    Embedding cache is keyed by a hash of the docs/chunks. If the docs change, cache is invalidated.
     """
     os.makedirs(os.path.dirname(index_path), exist_ok=True)
     embeddings_model = OpenAIEmbeddings()
     docs_hash = _get_docs_hash(docs) if docs is not None else None
     hash_path = _hash_path(index_path)
+    emb_cache_path = index_path + ".embeddings.cache"
     index_exists = os.path.exists(index_path)
     hash_exists = os.path.exists(hash_path)
     hash_matches = False
@@ -89,10 +91,23 @@ def embed_and_index_chunks(chunks: List[str], index_path: str = MEAL_INDEX_PATH,
     if index_exists and hash_matches:
         try:
             vector_db = FAISS.load_local(index_path, embeddings_model)
+            print(f"[RAG] FAISS index and doc hash match: loaded index from {index_path}")
+            # Try to load cached embeddings for transparency (not strictly needed for FAISS, but for future use)
+            emb_cached = cache_embeddings(chunks, None, emb_cache_path, mode='load')
+            if emb_cached is not None:
+                print(f"[RAG] Embedding cache hit for {emb_cache_path}")
+            else:
+                print(f"[RAG] Embedding cache miss for {emb_cache_path}")
             return vector_db
         except Exception as e:
             print(f"Warning: Failed to load FAISS index, rebuilding. Error: {e}")
+    # If no valid index or hash mismatch, recompute embeddings and index
     try:
+        print(f"[RAG] Building embeddings and FAISS index from scratch for {index_path}")
+        # Compute embeddings and save to cache
+        embeddings = embeddings_model.embed_documents(chunks)
+        cache_embeddings(chunks, embeddings, emb_cache_path, mode='save')
+        print(f"[RAG] Saved embeddings to cache {emb_cache_path}")
         vector_db = FAISS.from_texts(chunks, embeddings_model)
         vector_db.save_local(index_path)
         if docs_hash:
@@ -203,6 +218,7 @@ def cache_embeddings(chunks: List[str], embeddings: any, cache_path: str, mode: 
     """
     Save or load computed embeddings to/from disk for faster reloads.
     If mode is 'save', store the embeddings. If 'load', return loaded embeddings or None if not found.
+    Note: The cache_path should be keyed by the doc/chunk hash for invalidation.
     """
     if mode == 'save':
         # Assume embeddings is a numpy array or list of arrays
@@ -216,6 +232,7 @@ def cache_embeddings(chunks: List[str], embeddings: any, cache_path: str, mode: 
             return None
     else:
         raise ValueError("mode must be 'save' or 'load'")
+
 
 
 def cache_retrieval_results(query: str, results: any, cache_path: str, mode: str = 'save') -> any:
