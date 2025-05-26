@@ -1,0 +1,167 @@
+{
+  "Day 1": {
+    "type": "Push",
+    "warmup": [
+      {
+        "phase": "liss_cardio",
+        "name": "Marching in Place",
+        "prescription": "5 minutes"
+      }
+    ],
+    "workout": [
+      {
+        "name": "cable shoulder press",
+        "sets": 3,
+        "reps": "8-12",
+        "note": "Perform first set as warm-up (reduced effort)."
+      },
+      {
+        "name": "machine incline bench press",
+        "sets": 3,
+        "reps": "8-12"
+      },
+      {
+        "name": "machine flies:  seated fly",
+        "sets": 3,
+        "reps": "8-12"
+      },
+      {
+        "name": "machine lateral raise:  other machine",
+        "sets": 3,
+        "reps": "8-12"
+      },
+      {
+        "name": "cable front raise:  alternating",
+        "sets": 3,
+        "reps": "8-12"
+      },
+      {
+        "name": "machine bench press",
+        "sets": 3,
+        "reps": "8-12"
+      },
+      {
+        "name": "cable triceps extension:  with rope",
+        "sets": 3,
+        "reps": "8-12"
+      },
+      {
+        "name": "[Cardio Add-On] LISS 30 mins",
+        "sets": "",
+        "reps": ""
+      }
+    ],
+    "cooldown": [
+      {
+        "name": "Shoulder Stretch (Cross-Body)",
+        "prescription": "2–4 reps per side, hold for 15–30s"
+      }
+    ]
+  },
+  "Day 2": {
+    "type": "Pull",
+    "warmup": [
+      {
+        "phase": "liss_cardio",
+        "name": "Marching in Place",
+        "prescription": "5 minutes"
+      }
+    ],
+    "workout": [
+      {
+        "name": "machine t-bar row",
+        "sets": 3,
+        "reps": "8-12",
+        "note": "Perform first set as warm-up (reduced effort)."
+      },
+      {
+        "name": "cable pulldown:  parallel grip pulldown",
+        "sets": 3,
+        "reps": "8-12"
+      },
+      {
+        "name": "machine seated row:  wide grip",
+        "sets": 3,
+        "reps": "8-12"
+      },
+      {
+        "name": "cable rear delt row:  standing rear delt row (stirrups)",
+        "sets": 3,
+        "reps": "8-12"
+      },
+      {
+        "name": "cable curl:  one arm curl",
+        "sets": 3,
+        "reps": "8-12"
+      },
+      {
+        "name": "cable hammer curl",
+        "sets": 3,
+        "reps": "8-12"
+      }
+    ],
+    "cooldown": [
+      {
+        "name": "Lower Back Stretch (Knee to Chest)",
+        "prescription": "2–4 reps per side, hold for 15–30s"
+      }
+    ]
+  },
+  "Day 3": {
+    "type": "Legs",
+    "warmup": [
+      {
+        "phase": "liss_cardio",
+        "name": "Marching in Place",
+        "prescription": "5 minutes"
+      }
+    ],
+    "workout": [
+      {
+        "name": "cable squat",
+        "sets": 3,
+        "reps": "8-12",
+        "note": "Perform first set as warm-up (reduced effort)."
+      },
+      {
+        "name": "machine leg presses:  45° leg press",
+        "sets": 3,
+        "reps": "8-12"
+      },
+      {
+        "name": "machine lying leg curl",
+        "sets": 3,
+        "reps": "8-12"
+      },
+      {
+        "name": "machine seated hip abduction",
+        "sets": 3,
+        "reps": "8-12"
+      },
+      {
+        "name": "barbell standing calf raise",
+        "sets": 3,
+        "reps": "8-12"
+      },
+      {
+        "name": "machine leg extension",
+        "sets": 3,
+        "reps": "8-12"
+      }
+    ],
+    "cooldown": [
+      {
+        "name": "Quadriceps Stretch",
+        "prescription": "2–4 reps per leg, hold for 15–30s"
+      },
+      {
+        "name": "Hip Flexor Stretch (Kneeling)",
+        "prescription": "2–4 reps per side, hold for 15–30s"
+      },
+      {
+        "name": "Calf Stretch",
+        "prescription": "2–4 reps, hold each for 15–30s"
+      }
+    ]
+  }
+}

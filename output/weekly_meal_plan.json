@@ -1,0 +1,1070 @@
+[
+  {
+    "meals": {
+      "breakfast": {
+        "type": "Breakfast",
+        "components": {
+          "protein": {
+            "item": "Eggs",
+            "portion": "120g",
+            "calories": 165.6
+          },
+          "carb": {
+            "item": "Pita Bread (Shami)",
+            "portion": "160g",
+            "calories": 444.8
+          },
+          "fat": {
+            "item": "butter",
+            "portion": "15g",
+            "calories": 110.0
+          },
+          "vegetables": [
+            {
+              "item": "onion",
+              "portion": "50g",
+              "calories": 21.0
+            },
+            {
+              "item": "tomato",
+              "portion": "50g",
+              "calories": 10.5
+            },
+            {
+              "item": "green bell pepper",
+              "portion": "50g",
+              "calories": 11.0
+            }
+          ],
+          "fruits": [
+            {
+              "item": "Pomegranates",
+              "portion": "100g",
+              "calories": 92.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 31.8,
+          "fat_g": 27.5,
+          "carbs_g": 91.0,
+          "calories": 854.9
+        },
+        "tags": [
+          "high protein",
+          "animal-based"
+        ]
+      },
+      "lunch": {
+        "type": "Lunch",
+        "components": {
+          "protein": {
+            "item": "Lamb Chop",
+            "portion": "250g",
+            "calories": 352.5
+          },
+          "carb": {
+            "item": "White Rice",
+            "portion": "150g",
+            "calories": 522.0
+          },
+          "fat": {
+            "item": "butter",
+            "portion": "37g",
+            "calories": 271.7
+          },
+          "vegetables": [
+            {
+              "item": "garlic",
+              "portion": "50g",
+              "calories": 81.0
+            },
+            {
+              "item": "okra",
+              "portion": "50g",
+              "calories": 19.5
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 60.9,
+          "fat_g": 49.4,
+          "carbs_g": 120.4,
+          "calories": 1246.7
+        },
+        "tags": [
+          "high protein",
+          "animal-based"
+        ]
+      },
+      "dinner": {
+        "type": "Dinner",
+        "components": {
+          "protein": {
+            "item": "Beef Ribs",
+            "portion": "140g",
+            "calories": 204.4
+          },
+          "carb": {
+            "item": "White Rice",
+            "portion": "140g",
+            "calories": 488.5
+          },
+          "fat": {
+            "item": "butter",
+            "portion": "15g",
+            "calories": 110.0
+          },
+          "vegetables": [
+            {
+              "item": "garlic",
+              "portion": "50g",
+              "calories": 81.0
+            },
+            {
+              "item": "okra",
+              "portion": "50g",
+              "calories": 19.5
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 40.800000000000004,
+          "fat_g": 23.5,
+          "carbs_g": 112.5,
+          "calories": 903.4
+        },
+        "tags": [
+          "high protein",
+          "animal-based"
+        ]
+      }
+    },
+    "totals": {
+      "calories": 3005.0,
+      "protein_g": 133.5,
+      "carbs_g": 323.9,
+      "fat_g": 100.4
+    },
+    "date": "Day 1"
+  },
+  {
+    "meals": {
+      "breakfast": {
+        "type": "Breakfast",
+        "components": {
+          "protein": {
+            "item": "Cottage Cheese",
+            "portion": "120g",
+            "calories": 111.6
+          },
+          "carb": {
+            "item": "Oats",
+            "portion": "168g",
+            "calories": 665.4
+          },
+          "fat": {
+            "item": "butter",
+            "portion": "15g",
+            "calories": 110.0
+          },
+          "vegetables": [
+            {
+              "item": "onion",
+              "portion": "50g",
+              "calories": 21.0
+            },
+            {
+              "item": "parsley",
+              "portion": "50g",
+              "calories": 22.0
+            },
+            {
+              "item": "yellow bell pepper",
+              "portion": "50g",
+              "calories": 15.0
+            }
+          ],
+          "fruits": [
+            {
+              "item": "Oranges",
+              "portion": "100g",
+              "calories": 52.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 43.6,
+          "fat_g": 31.7,
+          "carbs_g": 116.1,
+          "calories": 997.0
+        },
+        "tags": [
+          "high protein",
+          "animal-based"
+        ]
+      },
+      "lunch": {
+        "type": "Lunch",
+        "components": {
+          "protein": {
+            "item": "Lean Ground Beef",
+            "portion": "180g",
+            "calories": 306.0
+          },
+          "carb": {
+            "item": "White Rice",
+            "portion": "180g",
+            "calories": 626.4
+          },
+          "fat": {
+            "item": "olive oil",
+            "portion": "30g",
+            "calories": 273.6
+          },
+          "vegetables": [
+            {
+              "item": "garlic",
+              "portion": "50g",
+              "calories": 81.0
+            },
+            {
+              "item": "cabbage",
+              "portion": "50g",
+              "calories": 14.5
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 48.6,
+          "fat_g": 50.2,
+          "carbs_g": 144.0,
+          "calories": 1301.5
+        },
+        "tags": [
+          "high protein",
+          "animal-based"
+        ]
+      },
+      "dinner": {
+        "type": "Dinner",
+        "components": {
+          "protein": {
+            "item": "Goat",
+            "portion": "198g",
+            "calories": 204.0
+          },
+          "carb": {
+            "item": "White Rice",
+            "portion": "120g",
+            "calories": 417.6
+          },
+          "fat": {
+            "item": "butter",
+            "portion": "15g",
+            "calories": 110.0
+          },
+          "vegetables": [
+            {
+              "item": "garlic",
+              "portion": "50g",
+              "calories": 81.0
+            },
+            {
+              "item": "spinach",
+              "portion": "50g",
+              "calories": 14.5
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 50.2,
+          "fat_g": 19.400000000000002,
+          "carbs_g": 96.2,
+          "calories": 827.1
+        },
+        "tags": [
+          "high protein",
+          "animal-based"
+        ]
+      }
+    },
+    "totals": {
+      "calories": 3125.6,
+      "protein_g": 142.4,
+      "carbs_g": 356.3,
+      "fat_g": 101.3
+    },
+    "date": "Day 2"
+  },
+  {
+    "meals": {
+      "breakfast": {
+        "type": "Breakfast",
+        "components": {
+          "protein": {
+            "item": "Milk",
+            "portion": "120g",
+            "calories": 73.2
+          },
+          "carb": {
+            "item": "Oats",
+            "portion": "168g",
+            "calories": 665.4
+          },
+          "fat": {
+            "item": "olive oil",
+            "portion": "15g",
+            "calories": 135.0
+          },
+          "vegetables": [
+            {
+              "item": "onion",
+              "portion": "50g",
+              "calories": 21.0
+            },
+            {
+              "item": "parsley",
+              "portion": "50g",
+              "calories": 22.0
+            },
+            {
+              "item": "red bell pepper",
+              "portion": "50g",
+              "calories": 15.5
+            }
+          ],
+          "fruits": [
+            {
+              "item": "Grapes",
+              "portion": "100g",
+              "calories": 63.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 35.0,
+          "fat_g": 33.2,
+          "carbs_g": 118.3,
+          "calories": 995.1
+        },
+        "tags": [
+          "high protein",
+          "animal-based"
+        ]
+      },
+      "lunch": {
+        "type": "Lunch",
+        "components": {
+          "protein": {
+            "item": "Talipa (Bulty) Fish",
+            "portion": "220g",
+            "calories": 209.0
+          },
+          "carb": {
+            "item": "White Rice",
+            "portion": "187g",
+            "calories": 651.6
+          },
+          "fat": {
+            "item": "butter",
+            "portion": "37g",
+            "calories": 271.7
+          },
+          "vegetables": [
+            {
+              "item": "cucumber",
+              "portion": "50g",
+              "calories": 6.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 59.7,
+          "fat_g": 36.7,
+          "carbs_g": 150.20000000000002,
+          "calories": 1138.3
+        },
+        "tags": [
+          "high protein",
+          "animal-based"
+        ]
+      },
+      "dinner": {
+        "type": "Dinner",
+        "components": {
+          "protein": {
+            "item": "Beef Steak",
+            "portion": "140g",
+            "calories": 231.0
+          },
+          "carb": {
+            "item": "Pasta",
+            "portion": "150g",
+            "calories": 545.0
+          },
+          "fat": {
+            "item": "butter",
+            "portion": "15g",
+            "calories": 110.0
+          },
+          "vegetables": [
+            {
+              "item": "garlic",
+              "portion": "50g",
+              "calories": 81.0
+            },
+            {
+              "item": "zucchini",
+              "portion": "50g",
+              "calories": 13.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 49.1,
+          "fat_g": 29.3,
+          "carbs_g": 112.5,
+          "calories": 980.0
+        },
+        "tags": [
+          "high protein",
+          "animal-based"
+        ]
+      }
+    },
+    "totals": {
+      "calories": 3113.4,
+      "protein_g": 143.8,
+      "carbs_g": 381.0,
+      "fat_g": 99.2
+    },
+    "date": "Day 3"
+  },
+  {
+    "meals": {
+      "breakfast": {
+        "type": "Breakfast",
+        "components": {
+          "protein": {
+            "item": "Eggs",
+            "portion": "120g",
+            "calories": 165.6
+          },
+          "carb": {
+            "item": "White Bread",
+            "portion": "160g",
+            "calories": 379.2
+          },
+          "fat": {
+            "item": "butter",
+            "portion": "15g",
+            "calories": 110.0
+          },
+          "vegetables": [
+            {
+              "item": "onion",
+              "portion": "50g",
+              "calories": 21.0
+            },
+            {
+              "item": "tomato",
+              "portion": "50g",
+              "calories": 10.5
+            },
+            {
+              "item": "yellow bell pepper",
+              "portion": "50g",
+              "calories": 15.0
+            }
+          ],
+          "fruits": [
+            {
+              "item": "Figs",
+              "portion": "100g",
+              "calories": 82.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 33.400000000000006,
+          "fat_g": 29.1,
+          "carbs_g": 71.80000000000001,
+          "calories": 783.3
+        },
+        "tags": [
+          "high protein",
+          "animal-based"
+        ]
+      },
+      "lunch": {
+        "type": "Lunch",
+        "components": {
+          "protein": {
+            "item": "Lamb Leg",
+            "portion": "250g",
+            "calories": 320.0
+          },
+          "carb": {
+            "item": "White Rice",
+            "portion": "150g",
+            "calories": 522.0
+          },
+          "fat": {
+            "item": "butter",
+            "portion": "37g",
+            "calories": 271.7
+          },
+          "vegetables": [
+            {
+              "item": "garlic",
+              "portion": "50g",
+              "calories": 81.0
+            },
+            {
+              "item": "spinach",
+              "portion": "50g",
+              "calories": 14.5
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 63.4,
+          "fat_g": 46.9,
+          "carbs_g": 120.4,
+          "calories": 1209.2
+        },
+        "tags": [
+          "high protein",
+          "animal-based"
+        ]
+      },
+      "dinner": {
+        "type": "Dinner",
+        "components": {
+          "protein": {
+            "item": "Lean Ground Beef",
+            "portion": "140g",
+            "calories": 238.0
+          },
+          "carb": {
+            "item": "Pasta",
+            "portion": "150g",
+            "calories": 545.0
+          },
+          "fat": {
+            "item": "olive oil",
+            "portion": "15g",
+            "calories": 135.0
+          },
+          "vegetables": [
+            {
+              "item": "garlic",
+              "portion": "50g",
+              "calories": 81.0
+            },
+            {
+              "item": "eggplant",
+              "portion": "50g",
+              "calories": 14.5
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 47.5,
+          "fat_g": 32.0,
+          "carbs_g": 112.3,
+          "calories": 1013.5
+        },
+        "tags": [
+          "high protein",
+          "animal-based"
+        ]
+      }
+    },
+    "totals": {
+      "calories": 3006.0,
+      "protein_g": 144.3,
+      "carbs_g": 304.5,
+      "fat_g": 108.0
+    },
+    "date": "Day 4"
+  },
+  {
+    "meals": {
+      "breakfast": {
+        "type": "Breakfast",
+        "components": {
+          "protein": {
+            "item": "Eggs",
+            "portion": "120g",
+            "calories": 165.6
+          },
+          "carb": {
+            "item": "Pita Bread (Shami)",
+            "portion": "160g",
+            "calories": 444.8
+          },
+          "fat": {
+            "item": "butter",
+            "portion": "15g",
+            "calories": 110.0
+          },
+          "vegetables": [
+            {
+              "item": "onion",
+              "portion": "50g",
+              "calories": 21.0
+            },
+            {
+              "item": "parsley",
+              "portion": "50g",
+              "calories": 22.0
+            },
+            {
+              "item": "yellow bell pepper",
+              "portion": "50g",
+              "calories": 15.0
+            }
+          ],
+          "fruits": [
+            {
+              "item": "Apricots",
+              "portion": "100g",
+              "calories": 53.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 31.8,
+          "fat_g": 27.5,
+          "carbs_g": 91.0,
+          "calories": 831.4
+        },
+        "tags": [
+          "high protein",
+          "animal-based"
+        ]
+      },
+      "lunch": {
+        "type": "Lunch",
+        "components": {
+          "protein": {
+            "item": "Lamb Leg",
+            "portion": "250g",
+            "calories": 320.0
+          },
+          "carb": {
+            "item": "White Rice",
+            "portion": "150g",
+            "calories": 522.0
+          },
+          "fat": {
+            "item": "butter",
+            "portion": "37g",
+            "calories": 271.7
+          },
+          "vegetables": [
+            {
+              "item": "onion",
+              "portion": "50g",
+              "calories": 21.0
+            },
+            {
+              "item": "okra",
+              "portion": "50g",
+              "calories": 19.5
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 63.4,
+          "fat_g": 46.9,
+          "carbs_g": 120.4,
+          "calories": 1154.2
+        },
+        "tags": [
+          "high protein",
+          "animal-based"
+        ]
+      },
+      "dinner": {
+        "type": "Dinner",
+        "components": {
+          "protein": {
+            "item": "Beef Liver",
+            "portion": "140g",
+            "calories": 180.6
+          },
+          "carb": {
+            "item": "White Rice",
+            "portion": "140g",
+            "calories": 488.5
+          },
+          "fat": {
+            "item": "olive oil",
+            "portion": "15g",
+            "calories": 135.0
+          },
+          "vegetables": [
+            {
+              "item": "onion",
+              "portion": "50g",
+              "calories": 21.0
+            },
+            {
+              "item": "cabbage",
+              "portion": "50g",
+              "calories": 14.5
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 39.2,
+          "fat_g": 22.0,
+          "carbs_g": 117.89999999999999,
+          "calories": 839.6
+        },
+        "tags": [
+          "high protein",
+          "animal-based"
+        ]
+      }
+    },
+    "totals": {
+      "calories": 2825.2,
+      "protein_g": 134.4,
+      "carbs_g": 329.3,
+      "fat_g": 96.4
+    },
+    "date": "Day 5"
+  },
+  {
+    "meals": {
+      "breakfast": {
+        "type": "Breakfast",
+        "components": {
+          "protein": {
+            "item": "Milk",
+            "portion": "120g",
+            "calories": 73.2
+          },
+          "carb": {
+            "item": "Oats",
+            "portion": "168g",
+            "calories": 665.4
+          },
+          "fat": {
+            "item": "butter",
+            "portion": "15g",
+            "calories": 110.0
+          },
+          "vegetables": [
+            {
+              "item": "onion",
+              "portion": "50g",
+              "calories": 21.0
+            },
+            {
+              "item": "tomato",
+              "portion": "50g",
+              "calories": 10.5
+            },
+            {
+              "item": "yellow bell pepper",
+              "portion": "50g",
+              "calories": 15.0
+            }
+          ],
+          "fruits": [
+            {
+              "item": "Apricots",
+              "portion": "100g",
+              "calories": 53.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 35.2,
+          "fat_g": 30.5,
+          "carbs_g": 118.5,
+          "calories": 948.1
+        },
+        "tags": [
+          "high protein",
+          "animal-based"
+        ]
+      },
+      "lunch": {
+        "type": "Lunch",
+        "components": {
+          "protein": {
+            "item": "Turkey Breast",
+            "portion": "231g",
+            "calories": 249.3
+          },
+          "carb": {
+            "item": "White Rice",
+            "portion": "150g",
+            "calories": 522.0
+          },
+          "fat": {
+            "item": "olive oil",
+            "portion": "30g",
+            "calories": 273.6
+          },
+          "vegetables": [
+            {
+              "item": "garlic",
+              "portion": "50g",
+              "calories": 81.0
+            },
+            {
+              "item": "tomato",
+              "portion": "50g",
+              "calories": 10.5
+            },
+            {
+              "item": "carrot",
+              "portion": "50g",
+              "calories": 22.0
+            },
+            {
+              "item": "yellow bell pepper",
+              "portion": "50g",
+              "calories": 15.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 65.9,
+          "fat_g": 36.5,
+          "carbs_g": 122.3,
+          "calories": 1173.4
+        },
+        "tags": [
+          "high protein",
+          "animal-based"
+        ]
+      },
+      "dinner": {
+        "type": "Dinner",
+        "components": {
+          "protein": {
+            "item": "Dove",
+            "portion": "160g",
+            "calories": 339.2
+          },
+          "carb": {
+            "item": "Pita Bread (Shami)",
+            "portion": "130g",
+            "calories": 361.4
+          },
+          "fat": {
+            "item": "olive oil",
+            "portion": "15g",
+            "calories": 135.0
+          },
+          "vegetables": [
+            {
+              "item": "garlic",
+              "portion": "50g",
+              "calories": 81.0
+            },
+            {
+              "item": "tomato",
+              "portion": "50g",
+              "calories": 10.5
+            },
+            {
+              "item": "carrot",
+              "portion": "50g",
+              "calories": 22.0
+            },
+            {
+              "item": "green bell pepper",
+              "portion": "50g",
+              "calories": 11.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 51.4,
+          "fat_g": 38.400000000000006,
+          "carbs_g": 72.8,
+          "calories": 960.0999999999999
+        },
+        "tags": [
+          "high protein",
+          "animal-based"
+        ]
+      }
+    },
+    "totals": {
+      "calories": 3081.6,
+      "protein_g": 152.5,
+      "carbs_g": 313.6,
+      "fat_g": 105.4
+    },
+    "date": "Day 6"
+  },
+  {
+    "meals": {
+      "breakfast": {
+        "type": "Breakfast",
+        "components": {
+          "protein": {
+            "item": "Feta Cheese",
+            "portion": "120g",
+            "calories": 318.0
+          },
+          "carb": {
+            "item": "Pita Bread (Shami)",
+            "portion": "160g",
+            "calories": 444.8
+          },
+          "fat": {
+            "item": "olive oil",
+            "portion": "15g",
+            "calories": 135.0
+          },
+          "vegetables": [
+            {
+              "item": "onion",
+              "portion": "50g",
+              "calories": 21.0
+            },
+            {
+              "item": "parsley",
+              "portion": "50g",
+              "calories": 22.0
+            },
+            {
+              "item": "red bell pepper",
+              "portion": "50g",
+              "calories": 15.5
+            }
+          ],
+          "fruits": [
+            {
+              "item": "Apricots",
+              "portion": "100g",
+              "calories": 53.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 34.0,
+          "fat_g": 44.599999999999994,
+          "carbs_g": 94.39999999999999,
+          "calories": 1009.3
+        },
+        "tags": [
+          "high protein",
+          "animal-based"
+        ]
+      },
+      "lunch": {
+        "type": "Lunch",
+        "components": {
+          "protein": {
+            "item": "Beef Shank",
+            "portion": "180g",
+            "calories": 217.8
+          },
+          "carb": {
+            "item": "White Rice",
+            "portion": "180g",
+            "calories": 626.4
+          },
+          "fat": {
+            "item": "butter",
+            "portion": "37g",
+            "calories": 271.7
+          },
+          "vegetables": [
+            {
+              "item": "onion",
+              "portion": "50g",
+              "calories": 21.0
+            },
+            {
+              "item": "cabbage",
+              "portion": "50g",
+              "calories": 14.5
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 52.6,
+          "fat_g": 39.4,
+          "carbs_g": 144.4,
+          "calories": 1151.4
+        },
+        "tags": [
+          "high protein",
+          "animal-based"
+        ]
+      },
+      "dinner": {
+        "type": "Dinner",
+        "components": {
+          "protein": {
+            "item": "Chicken Thigh",
+            "portion": "160g",
+            "calories": 232.0
+          },
+          "carb": {
+            "item": "White Rice",
+            "portion": "130g",
+            "calories": 452.4
+          },
+          "fat": {
+            "item": "olive oil",
+            "portion": "15g",
+            "calories": 135.0
+          },
+          "vegetables": [
+            {
+              "item": "onion",
+              "portion": "50g",
+              "calories": 21.0
+            },
+            {
+              "item": "tomato",
+              "portion": "50g",
+              "calories": 10.5
+            },
+            {
+              "item": "carrot",
+              "portion": "50g",
+              "calories": 22.0
+            },
+            {
+              "item": "green bell pepper",
+              "portion": "50g",
+              "calories": 11.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 39.5,
+          "fat_g": 29.1,
+          "carbs_g": 104.0,
+          "calories": 883.9
+        },
+        "tags": [
+          "high protein",
+          "animal-based"
+        ]
+      }
+    },
+    "totals": {
+      "calories": 3044.6,
+      "protein_g": 126.1,
+      "carbs_g": 342.8,
+      "fat_g": 113.1
+    },
+    "date": "Day 7"
+  }
+]

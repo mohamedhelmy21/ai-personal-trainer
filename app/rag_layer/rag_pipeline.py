@@ -1,0 +1,240 @@
+import os
+import hashlib
+from typing import List, Dict, Any, Optional
+from dotenv import load_dotenv
+from langchain_community.embeddings import OpenAIEmbeddings
+from langchain_community.vectorstores import FAISS
+from langchain_community.chat_models import ChatOpenAI
+from langchain.schema import HumanMessage, SystemMessage
+from app.rag_layer.prompts import MEAL_DAY_VALIDATION_PROMPT, WORKOUT_DAY_VALIDATION_PROMPT
+from langchain_community.vectorstores import Chroma
+import chromadb
+import pickle
+import json
+import numpy as np
+
+# Load environment variables (for OpenAI API key)
+load_dotenv()
+
+RAG_DOCS_DIR = "data/rag_docs/"
+FAISS_INDEX_DIR = "data/faiss_index/"
+MEAL_INDEX_PATH = os.path.join(FAISS_INDEX_DIR, "meal_index")
+WORKOUT_INDEX_PATH = os.path.join(FAISS_INDEX_DIR, "workout_index")
+
+# --- 1. Load Documents ---
+def load_rag_docs(doc_dir: str = RAG_DOCS_DIR) -> List[str]:
+    """
+    Load all text, markdown, and JSON documents from the RAG docs directory.
+    Returns a list of document strings.
+    """
+    docs = []
+    for fname in os.listdir(doc_dir):
+        fpath = os.path.join(doc_dir, fname)
+        if not os.path.isfile(fpath):
+            continue
+        ext = fname.lower().split('.')[-1]
+        try:
+            if ext in ["txt", "md", "json"]:
+                with open(fpath, encoding="utf-8") as f:
+                    docs.append(f.read())
+            elif ext == "csv":
+                with open(fpath, encoding="utf-8") as f:
+                    docs.append(f.read())  # or use pandas if you want to parse CSVs
+            # TODO: Add PDF/DOCX parsing here if needed
+            else:
+                # Skip binary files for now
+                continue
+        except Exception as e:
+            print(f"Skipping {fname}: {e}")
+    return docs
+
+# --- 2. Chunk Documents ---
+def chunk_docs(docs: List[str], chunk_size: int = 800) -> List[str]:
+    """
+    Chunk documents by paragraph or up to chunk_size tokens/words.
+    """
+    import re
+    chunks = []
+    for doc in docs:
+        paragraphs = re.split(r'\n{2,}', doc)
+        for para in paragraphs:
+            if len(para.split()) > chunk_size:
+                # Further split long paragraphs
+                words = para.split()
+                for i in range(0, len(words), chunk_size):
+                    chunk = ' '.join(words[i:i+chunk_size])
+                    chunks.append(chunk)
+            elif para.strip():
+                chunks.append(para.strip())
+    return chunks
+
+# --- 3. Embed and Index Chunks with Caching and Invalidation ---
+def embed_and_index_chunks(chunks: List[str], index_path: str = MEAL_INDEX_PATH, docs: List[str] = None) -> FAISS:
+    """
+    Embed chunks using OpenAIEmbeddings and store/load FAISS vector DB from disk.
+    If index exists and hash matches, load it. Otherwise, build, save, and return.
+    """
+    os.makedirs(os.path.dirname(index_path), exist_ok=True)
+    embeddings_model = OpenAIEmbeddings()
+    docs_hash = _get_docs_hash(docs) if docs is not None else None
+    hash_path = _hash_path(index_path)
+    index_exists = os.path.exists(index_path)
+    hash_exists = os.path.exists(hash_path)
+    hash_matches = False
+    if index_exists and hash_exists and docs_hash:
+        with open(hash_path, 'r') as f:
+            stored_hash = f.read().strip()
+        if stored_hash == docs_hash:
+            hash_matches = True
+    if index_exists and hash_matches:
+        try:
+            vector_db = FAISS.load_local(index_path, embeddings_model)
+            return vector_db
+        except Exception as e:
+            print(f"Warning: Failed to load FAISS index, rebuilding. Error: {e}")
+    try:
+        vector_db = FAISS.from_texts(chunks, embeddings_model)
+        vector_db.save_local(index_path)
+        if docs_hash:
+            with open(hash_path, 'w') as f:
+                f.write(docs_hash)
+        return vector_db
+    except Exception as e:
+        raise RuntimeError(f"Embedding/indexing failed: {e}")
+    # TODO: Add more efficient partial update support if only some docs change
+
+def _get_docs_hash(docs: List[str]) -> str:
+    """Compute a SHA256 hash of all document contents for index invalidation."""
+    m = hashlib.sha256()
+    for doc in docs:
+        m.update(doc.encode('utf-8'))
+    return m.hexdigest()
+
+def _hash_path(index_path: str) -> str:
+    return index_path + ".hash"
+
+# --- 4. Retrieve Context ---
+def retrieve_context(query: str, vector_db, top_k: int = 5) -> str:
+    """
+    Retrieve top_k relevant chunks from the vector DB for the given query.
+    Uses disk-based caching for retrieval results.
+    """
+    cache_path = "data/retrieval_cache"
+    cached = cache_retrieval_results(query, None, cache_path, mode='load')
+    if cached is not None:
+        return cached
+    try:
+        docs_and_scores = vector_db.similarity_search_with_score(query, k=top_k)
+        context = '\n---\n'.join([doc[0].page_content for doc in docs_and_scores])
+        cache_retrieval_results(query, context, cache_path, mode='save')
+        return context
+    except Exception as e:
+        raise RuntimeError(f"Context retrieval failed: {e}")
+
+# --- 5. Prompt Assembly ---
+def assemble_prompt(template: str, context: str, **kwargs) -> str:
+    """
+    Assemble a prompt using the given template, injecting context and other variables.
+    """
+    try:
+        prompt = template.format(retrieved_context=context, **kwargs)
+        return prompt
+    except Exception as e:
+        raise RuntimeError(f"Prompt assembly failed: {e}")
+
+# --- 6. LLM Call ---
+def call_llm(prompt: str, model: str = "gpt-4o", max_tokens: int = 2048, temperature: float = 0.2) -> str:
+    """
+    Call the LLM using LangChain's ChatOpenAI and return the response.
+    """
+    try:
+        llm = ChatOpenAI(model=model, temperature=temperature, max_tokens=max_tokens)
+        messages = [
+            SystemMessage(content="You are a helpful assistant."),
+            HumanMessage(content=prompt)
+        ]
+        response = llm(messages)
+        return response.content.strip()
+    except Exception as e:
+        raise RuntimeError(f"LLM call failed: {e}")
+
+# --- Chroma Support (Stub Implementation) ---
+def embed_and_index_chunks_chroma(chunks: List[str], index_path: str = None) -> Chroma:
+    """
+    Stub: Embed chunks using OpenAIEmbeddings and store/load Chroma vector DB from disk.
+    Returns a Chroma vector DB instance. (No persistent caching yet.)
+    """
+    embeddings = OpenAIEmbeddings()
+    # For now, use in-memory Chroma DB; add persistent_dir for real use
+    chroma_db = Chroma.from_texts(chunks, embeddings, persist_directory=index_path)
+    # TODO: Add persistent caching and hash-based invalidation for Chroma
+    return chroma_db
+
+# --- Anthropic/Open-Source LLM Support (TODO) ---
+def call_llm_anthropic(prompt: str, model: str = "claude-3-opus", **kwargs) -> str:
+    """
+    TODO: Call Anthropic Claude or other open-source LLMs for RAG pipeline.
+    """
+    pass
+
+# --- Open-Source Embedding Support (TODO) ---
+def embed_and_index_chunks_open_source(chunks: List[str], index_path: str = None) -> None:
+    """
+    TODO: Use open-source embedding models (e.g., SentenceTransformers, HuggingFace) for vector DB.
+    """
+    pass
+
+# --- Multi-user and Session Support (TODO) ---
+def get_user_index_path(user_id: str, plan_type: str = "meal") -> str:
+    """
+    TODO: Return a unique FAISS index path for each user and plan type (meal/workout).
+    """
+    pass
+
+# TODO: Add session-based caching and retrieval for concurrent API calls.
+
+# --- TODOs for Future Support ---
+# TODO: Add multi-user and session support for concurrent API calls.
+# TODO: Add robust index invalidation/rebuilding if docs are updated (e.g., hash docs, check file mtimes, etc.)
+# TODO: Add caching for embeddings and retrieval for efficiency.
+
+# --- Embedding and Retrieval Caching (Implemented) ---
+def cache_embeddings(chunks: List[str], embeddings: any, cache_path: str, mode: str = 'save') -> any:
+    """
+    Save or load computed embeddings to/from disk for faster reloads.
+    If mode is 'save', store the embeddings. If 'load', return loaded embeddings or None if not found.
+    """
+    if mode == 'save':
+        # Assume embeddings is a numpy array or list of arrays
+        with open(cache_path, 'wb') as f:
+            pickle.dump(embeddings, f)
+    elif mode == 'load':
+        if os.path.exists(cache_path):
+            with open(cache_path, 'rb') as f:
+                return pickle.load(f)
+        else:
+            return None
+    else:
+        raise ValueError("mode must be 'save' or 'load'")
+
+
+def cache_retrieval_results(query: str, results: any, cache_path: str, mode: str = 'save') -> any:
+    """
+    Save or load retrieval results for repeated queries.
+    If mode is 'save', store the results. If 'load', return loaded results or None if not found.
+    """
+    # Use a hash of the query to create a unique filename
+    import hashlib
+    query_hash = hashlib.sha256(query.encode('utf-8')).hexdigest()
+    file_path = f"{cache_path}_{query_hash}.json"
+    if mode == 'save':
+        with open(file_path, 'w', encoding='utf-8') as f:
+            json.dump(results, f, ensure_ascii=False, indent=2)
+    elif mode == 'load':
+        if os.path.exists(file_path):
+            with open(file_path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        else:
+            return None
+    else:
+        raise ValueError("mode must be 'save' or 'load'") 

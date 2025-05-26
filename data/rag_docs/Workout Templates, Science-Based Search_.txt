@@ -1,0 +1,815 @@
+﻿Science-Based Workout Templates for Push/Pull/Legs, Upper/Lower, and Full Body Routines
+I. Introduction: The Importance of Evidence-Based Workout Programming
+Structured workout routines are fundamental for individuals seeking to achieve various fitness objectives, including increases in strength, muscle size, and endurance. Utilizing workout templates grounded in scientific principles offers significant advantages over relying on anecdotal evidence or generic programs. Evidence-based approaches prioritize safety by incorporating exercises and training parameters that have been rigorously studied and shown to minimize the risk of injury. Furthermore, they maximize effectiveness by employing strategies that are known to elicit the desired physiological adaptations, such as muscle hypertrophy or strength gains. Finally, these templates promote efficiency by focusing on exercises and training protocols that provide the greatest return on investment for the time and effort invested. This report will explore three popular and effective training splits: Push/Pull/Legs (PPL), Upper/Lower (UL), and Full Body routines. The objective is to present a collection of science-backed workout templates for each of these splits, drawing from reputable organizations and publications in the field of exercise science, and to discuss the scientific rationale underpinning their design.
+II. Push/Pull/Legs (PPL) Workout Templates
+* Overview of the PPL Training Split and its Scientific Basis:
+The Push/Pull/Legs (PPL) training split is a method of organizing workouts based on the primary movement patterns involved in each exercise. The fundamental principle is to group exercises that involve pushing movements (away from the body), pulling movements (towards the body), and to dedicate a separate workout to the lower body.1 This organization aligns with the body's natural biomechanics, as muscles involved in similar actions often work together synergistically.7 For example, during a chest press, which is a pushing movement, the triceps muscles also contribute significantly.1 Training these muscle groups together can lead to more efficient workouts by capitalizing on this synergistic relationship.
+Typically, a PPL routine divides the body into three workout days: a "Push" day targeting the chest, shoulders, and triceps; a "Pull" day focusing on the upper and lower back, biceps, rear deltoids, and trapezius; and a "Legs" day that trains the glutes, quadriceps, hamstrings, and calves.1 Some variations may also include core exercises on any of these days.1 The PPL split offers considerable flexibility in terms of training frequency, with options ranging from 3 to 6 days per week, making it adaptable to various fitness goals, such as building muscle or increasing strength, and suitable for individuals with different levels of training experience.4 Beginners might start with a 3-day-per-week schedule, while more advanced individuals could opt for a 6-day routine to increase training volume and frequency for each muscle group.3
+Separating pushing and pulling movements into distinct workouts allows for a more focused approach to training each muscle group. This structure ensures that muscles involved in one type of movement are not fatigued by the other, potentially leading to better muscle activation and reduced risk of overtraining specific muscle groups on consecutive days. For instance, the triceps, which are heavily involved in pushing exercises, receive adequate rest before the next upper body workout that focuses on pulling movements. Furthermore, the ability to adjust the frequency of PPL training enables individuals to personalize their workout schedule based on their recovery capacity and specific training objectives. A novice lifter might benefit from training three days a week to prioritize proper form and allow ample time for the body to recover and adapt, whereas a more experienced individual could train six days a week to maximize the frequency of muscle stimulation, which research suggests is beneficial for muscle growth.6
+* Science-Backed PPL Templates from Reputable Sources:
+   * Template 1: Muscle & Strength - 3 Day PPL Workout for Beginners 1:
+This template, sourced from Muscle & Strength, is specifically designed for individuals new to weightlifting. It aims to increase strength and build muscle through a 3-day-per-week program with a rest day scheduled between each workout.1 This structure allows beginners sufficient time to recover and adapt to the training stimulus. The program is designed to be followed for a duration of 10 weeks.1
+The Push Day in this routine includes the following exercises: Military Press (5 sets of 5 repetitions), Dumbbell Bench Press (3 sets of 5 repetitions), Tricep Dip (3 sets of 8 repetitions), Lateral Raise (3 sets of 8 repetitions), Lying Dumbbell Extension (3 sets of 8 repetitions), and Tricep Pushdown (3 sets of 8 repetitions). Each exercise is performed with 1-2 minutes of rest between sets. The emphasis on lower repetition ranges (5-8) for many of these exercises is generally associated with the development of strength.11 The inclusion of compound exercises like the Military Press and Dumbbell Bench Press at the beginning of the workout aligns with the principle of prioritizing multi-joint movements for maximal muscle activation and strength gains.4 These exercises engage multiple muscle groups simultaneously, allowing beginners to lift heavier weights and stimulate overall muscle growth more effectively. The structure of this Push day incorporates a mix of barbell, dumbbell, and bodyweight exercises, providing a well-rounded approach for beginners to develop foundational strength and learn different movement patterns.1 Barbell and dumbbell exercises often require more core engagement and coordination, while bodyweight exercises like tricep dips can help build functional strength.
+The Pull Day consists of Pull Ups (or Lat Pull Downs) (5 sets of 5 repetitions), Bent-Over Barbell Row (3 sets of 5 repetitions), T-Bar Row (3 sets of 8 repetitions), Dumbbell Shrug (3 sets of 8 repetitions), Preacher Curl (3 sets of 8 repetitions), and Hammer Curl (3 sets of 8 repetitions), with 1-2 minutes of rest between sets. Similar to the Push day, the focus is on strength development with the compound pulling exercises (Pull Ups/Lat Pull Downs, Bent-Over Barbell Row) utilizing lower rep ranges. This Pull day effectively targets both vertical (Pull-ups/Lat Pulldowns) and horizontal (Bent-Over Barbell Row, T-Bar Row) pulling movements, ensuring comprehensive back muscle development.5 Vertical pulls primarily target the latissimus dorsi and contribute to back width, while horizontal pulls target the mid-back muscles, contributing to back thickness.
+The Leg Day includes Barbell Squat (5 sets of 5 repetitions), Deadlift (3 sets of 5 repetitions), Leg Press (3 sets of 8 repetitions), Lying Leg Curl (3 sets of 8 repetitions), Leg Extension (3 sets of 8 repetitions), and Seated Calf Raise (3 sets of 8 repetitions), with 1-2 minutes of rest between sets. The Barbell Squat and Deadlift, both performed for 5 repetitions, are excellent compound exercises for building lower body strength.1 The Leg day incorporates both knee-dominant exercises (Squat, Leg Press, Leg Extension) and hip-dominant exercises (Deadlift, Lying Leg Curl), ensuring balanced development of the major lower body muscle groups.5 Knee-dominant exercises primarily target the quadriceps, while hip-dominant exercises focus on the hamstrings and glutes.
+Table 1: Muscle & Strength - 3 Day PPL Workout for Beginners
+Workout Day
+	Exercise
+	Sets
+	Reps
+	Frequency
+	Push
+	Military Press (AKA Overhead Press)
+	5
+	5
+	1/week
+	Push
+	Dumbbell Bench Press
+	3
+	5
+	1/week
+	Push
+	Tricep Dip
+	3
+	8
+	1/week
+	Push
+	Lateral Raise
+	3
+	8
+	1/week
+	Push
+	Lying Dumbbell Extension
+	3
+	8
+	1/week
+	Push
+	Tricep Pushdown
+	3
+	8
+	1/week
+	Pull
+	Pull Up (or Lat Pull Down)
+	5
+	5
+	1/week
+	Pull
+	Bent-Over Barbell Row
+	3
+	5
+	1/week
+	Pull
+	T-Bar Row
+	3
+	8
+	1/week
+	Pull
+	Dumbbell Shrug
+	3
+	8
+	1/week
+	Pull
+	Preacher Curl
+	3
+	8
+	1/week
+	Pull
+	Hammer Curl
+	3
+	8
+	1/week
+	Legs
+	Barbell Squat
+	5
+	5
+	1/week
+	Legs
+	Deadlift
+	3
+	5
+	1/week
+	Legs
+	Leg Press
+	3
+	8
+	1/week
+	Legs
+	Lying Leg Curl
+	3
+	8
+	1/week
+	Legs
+	Leg Extension
+	3
+	8
+	1/week
+	Legs
+	Seated Calf Raise
+	3
+	8
+	1/week
+	
+
+
+
+
+
+*   **Template 2: Legion Athletics - Push Pull Legs Upper Lower (PPLUL) Split (PPL Portion) [2]:**
+   Legion Athletics offers a 5-day workout routine known as the Push Pull Legs Upper Lower (PPLUL) split, which combines the principles of both PPL and Upper/Lower training.[2] This template allows for a higher training frequency, typically with the PPL portion performed on the first three days of the week: Monday (Push), Tuesday (Pull), and Wednesday (Legs), followed by a rest day.[2]
+
+   The **Push Day** in this split includes Flat Barbell Bench Press (3 sets of 4-6 repetitions), Standing Overhead Press (3 sets of 4-6 repetitions), Incline Dumbbell Bench Press (3 sets of 6-8 repetitions), and Dumbbell Side Lateral Raise (3 sets of 6-8 repetitions). The rest periods are longer for the compound exercises (3-5 minutes) compared to the isolation exercise (2-3 minutes). The emphasis on lower rep ranges (4-6) for compound movements like the Flat Barbell Bench Press and Standing Overhead Press suggests a greater focus on strength development in this template.[11] The inclusion of both flat and incline pressing variations on the Push day ensures comprehensive development of the chest muscles, targeting different heads of the pectoralis major.[5, 9, 15] Flat bench press primarily targets the mid-chest, while incline bench press emphasizes the upper chest.
+
+   The **Pull Day** consists of Deadlift (3 sets of 4-6 repetitions), Pull-up (3 sets of 4-6 repetitions), One-Arm Dumbbell Row (3 sets of 6-8 repetitions), and Dumbbell Curl (3 sets of 6-8 repetitions). The rest periods are 3-5 minutes for the Deadlift and Pull-ups, and 2-3 minutes for the One-Arm Dumbbell Row and Dumbbell Curl. The Pull day includes the Deadlift, a highly effective compound exercise that works multiple muscle groups, including the back, legs, and core, making it a cornerstone of many strength-focused programs.[1, 4, 5, 8, 9, 11, 13, 14] Pull-ups are another excellent compound exercise for developing back strength and muscle.
+
+   The **Legs Day** includes Back Squat (3 sets of 4-6 repetitions), Leg Press (3 sets of 4-6 repetitions), Bulgarian Split Squat (3 sets of 6-8 repetitions), and Seated Calf Raise (3 sets of 6-8 repetitions). The rest periods are 3-5 minutes for the Back Squat and Leg Press, and 2-3 minutes for the Bulgarian Split Squat and Seated Calf Raise. The Legs day incorporates unilateral exercises like the Bulgarian Split Squat, which can help address muscle imbalances and improve stability and functional strength.[2, 5, 9, 14, 15] Unilateral exercises force each leg to work independently, which can be beneficial for athletes and individuals looking to improve overall lower body strength and coordination.
+
+   **Table 2: Legion Athletics - PPLUL Split (PPL Portion)**
+
+Workout Day
+	Exercise
+	Sets
+	Reps
+	Frequency
+	Push
+	Flat Barbell Bench Press
+	3
+	4-6
+	1/week
+	Push
+	Standing Overhead Press
+	3
+	4-6
+	1/week
+	Push
+	Incline Dumbbell Bench Press
+	3
+	6-8
+	1/week
+	Push
+	Dumbbell Side Lateral Raise
+	3
+	6-8
+	1/week
+	Pull
+	Deadlift
+	3
+	4-6
+	1/week
+	Pull
+	Pull-up
+	3
+	4-6
+	1/week
+	Pull
+	One-Arm Dumbbell Row
+	3
+	6-8
+	1/week
+	Pull
+	Dumbbell Curl
+	3
+	6-8
+	1/week
+	Legs
+	Back Squat
+	3
+	4-6
+	1/week
+	Legs
+	Leg Press
+	3
+	4-6
+	1/week
+	Legs
+	Bulgarian Split Squat
+	3
+	6-8
+	1/week
+	Legs
+	Seated Calf Raise
+	3
+	6-8
+	1/week
+	
+
+
+
+
+
+*   **Template 3: Built With Science - Science-Based Push, Pull, Legs Routine [5]:**
+   Built With Science provides a detailed PPL routine that is explicitly described as science-based, meaning the exercise selection and rep ranges are informed by EMG studies and biomechanical principles.[5] This routine is structured to be performed 6 days a week, typically with a rest day after every three consecutive days of training.[3, 4, 6, 7, 9] This higher frequency suggests it is intended for individuals with more training experience and a greater capacity for recovery.
+
+   The **Push Workout** includes Incline Barbell Bench Press (3-4 sets of 6-8 repetitions), Standing Dumbbell Shoulder Press (3-4 sets of 10-15 repetitions), Paused Flat Dumbbell Press (3-4 sets of 8-12 repetitions), Lean-Away Dumbbell Lateral Raise (2-3 sets of 10-15 repetitions), Seated Decline Cable Flies W/ Supination (2-3 sets of 10-15 repetitions), and Incline Dumbbell Overhead Extensions (2-3 sets of 10-15 repetitions). This workout targets all the upper body pushing muscles (chest, shoulders, and triceps) with a mix of compound and isolation exercises. The varied rep ranges (6-15) aim to stimulate both strength and hypertrophy. The rationale behind the exercise selection is provided, often referencing EMG analysis to support the effectiveness of each movement for targeting specific muscle fibers.[5] For example, the paused flat dumbbell press is included to help build strength out of the weakest position by eliminating the stretch-shortening reflex.
+
+   The **Pull Workout** consists of Pull-Ups OR Kneeling Lat Pulldowns (3-4 sets of 6-10 or 10-15 repetitions), Barbell Row (3-4 sets of 10-15 repetitions), Reverse Grip Lat Pulldowns (3-4 sets of 8-12 repetitions), Chest Supported Rear Delt Row (3-4 sets of 10-15 repetitions), Close Grip Barbell Curl (2-3 sets of 8-12 repetitions), and Face Pulls (Kneeling + Lying) (2-3 sets of 10-15 repetitions). This workout targets all the upper body pulling muscles (back and biceps), along with the rear deltoids. The routine strategically alternates between vertical and horizontal pulling movements to ensure comprehensive back development. The exercise selection is justified based on their ability to activate specific back muscles, such as the latissimus dorsi and trapezius.[5]
+
+   The **Legs Workout** includes Back Squats OR Front Squats (3-4 sets of 6-10 repetitions), Hip Thrusts (3-4 sets of 12-15 repetitions), Split Squats (2 sets Bulgarian, 2 sets contralateral) (4 sets of 8-12 repetitions per side), Glute Ham Raise (or Bosu Ball alternative) (3-4 sets of 10-15 repetitions), Standing Single Leg Calf Raise (2-4 sets of 6-10 repetitions), and Seated Calf Raise (2-4 sets of 10-15 repetitions). This workout is designed to target the quads, glutes, hamstrings, and calves in a balanced manner. It incorporates both compound exercises like squats and isolation movements such as leg curls and calf raises. The inclusion of exercises like hip thrusts and split squats reflects a focus on glute development and unilateral strength.[5]
+
+   **Table 3: Built With Science - Science-Based Push, Pull, Legs Routine**
+
+Workout Day
+	Exercise
+	Sets
+	Reps
+	Frequency
+	Push
+	Incline Barbell Bench Press
+	3-4
+	6-8
+	2/week
+	Push
+	Standing Dumbbell Shoulder Press
+	3-4
+	10-15
+	2/week
+	Push
+	Paused Flat Dumbbell Press
+	3-4
+	8-12
+	2/week
+	Push
+	Lean-Away Dumbbell Lateral Raise
+	2-3
+	10-15
+	2/week
+	Push
+	Seated Decline Cable Flies W/ Supination
+	2-3
+	10-15
+	2/week
+	Push
+	Incline Dumbbell Overhead Extensions
+	2-3
+	10-15
+	2/week
+	Pull
+	Pull-Ups OR Kneeling Lat Pulldowns
+	3-4
+	6-10/10-15
+	2/week
+	Pull
+	Barbell Row
+	3-4
+	10-15
+	2/week
+	Pull
+	Reverse Grip Lat Pulldowns
+	3-4
+	8-12
+	2/week
+	Pull
+	Chest Supported Rear Delt Row
+	3-4
+	10-15
+	2/week
+	Pull
+	Close Grip Barbell Curl
+	2-3
+	8-12
+	2/week
+	Pull
+	Face Pulls (Kneeling + Lying)
+	2-3
+	10-15
+	2/week
+	Legs
+	Back Squats OR Front Squats
+	3-4
+	6-10
+	2/week
+	Legs
+	Hip Thrusts
+	3-4
+	12-15
+	2/week
+	Legs
+	Split Squats (Bulgarian & Contralateral)
+	4
+	8-12
+	2/week
+	Legs
+	Glute Ham Raise (or alternative)
+	3-4
+	10-15
+	2/week
+	Legs
+	Standing Single Leg Calf Raise
+	2-4
+	6-10
+	2/week
+	Legs
+	Seated Calf Raise
+	2-4
+	10-15
+	2/week
+	      * Key Considerations and Recommendations for PPL Routines: When implementing a PPL routine, it is crucial to prioritize proper form, especially for compound exercises like squats, deadlifts, and bench presses, to minimize the risk of injury. Progressive overload, which involves gradually increasing the weight, reps, or sets over time, is a fundamental principle for achieving long-term progress in both strength and muscle growth.1 Adequate rest and recovery between workouts are also essential, particularly for beginners, to allow the muscles to repair and adapt to the training stimulus.1 It is important to listen to the body and adjust the routine based on individual recovery and fatigue levels. The optimal frequency for a PPL routine depends on various factors, including training experience, recovery capacity, and fitness goals. Beginners might find a 3-day-per-week schedule sufficient, while more experienced individuals might benefit from higher frequencies like 4-6 days per week.1 Higher training frequencies can lead to more frequent stimulation of muscle protein synthesis, which is crucial for muscle growth, but they also require greater recovery capacity. Core exercises can be incorporated on any of the training days or as a separate session to ensure comprehensive development.
+III. Upper/Lower (UL) Workout Templates
+      * Overview of the UL Training Split and its Scientific Basis:
+The Upper/Lower (UL) training split is another popular and effective method for organizing workout routines. The fundamental principle involves dedicating separate workout days to training the upper body and the lower body.6 This approach allows for focused training of each major muscle group twice per week, which is often considered optimal for stimulating muscle growth.6 Training each muscle group with sufficient frequency and volume is a key factor in maximizing hypertrophy.
+Typically, an UL routine divides the week into upper body workouts and lower body workouts. Upper body days typically target the chest, back, shoulders, biceps, triceps, traps, and often include abdominal exercises.6 Lower body days focus on the glutes, quadriceps, hamstrings, and calves.6 Common training frequencies for this split are 3 or 4 days per week, making it suitable for individuals aiming for both muscle building and strength gains.6 A frequently used 4-day split involves two upper body days and two lower body days spread throughout the week, such as Upper, Lower, Rest, Upper, Lower, Rest, Rest.6
+The UL split allows for a higher training volume per muscle group compared to a full body routine, as each session concentrates on a larger portion of the body.10 By dedicating an entire workout to the upper or lower body, individuals can include a wider variety of exercises and perform more sets for each muscle group without experiencing excessive fatigue that might occur when training the entire body in one session. Furthermore, the separation of upper and lower body training can facilitate recovery for different muscle groups. While the upper body muscles recover from their workout, the lower body is trained, and vice versa. This allows for a higher overall training frequency for each muscle group while still providing adequate rest between sessions targeting the same muscles.6 This balance between training and recovery is crucial for consistent progress.
+      * Science-Backed UL Templates from Reputable Sources:
+         * Template 4: Hevy App - 4 Day Upper/Lower Split 17:
+The Hevy App provides a sample 4-day UL split that outlines specific exercises, sets, and repetitions for each workout.17 This template follows a common weekly schedule: Monday - Upper 1, Tuesday - Lower 1, Wednesday - Off, Thursday - Upper 2, Friday - Lower 2, Saturday & Sunday - Off.
+Upper 1 includes Barbell Bench Press (3 sets of 6 to 10 reps), Barbell Bent Over Rows (3 sets of 6 to 10 reps), Seated Dumbbell Shoulder Press (3 sets of 8 to 12 reps), Lat Pulldowns (3 sets of 8 to 12 reps), Low Cable Chest Flyes (2 sets of 12 to 15 reps), Dumbbell Curl (2 sets of 12 to 15 reps), Overhead Dumbbell Tricep Extensions (2 sets of 12 to 15 reps), and Rope Cable Face Pulls (2 sets of 15 to 25 reps). This workout targets all the major muscle groups of the upper body with a mix of compound and isolation exercises. The rep ranges are primarily within the hypertrophy range (6-15), with face pulls performed for higher reps.
+Lower 1 consists of Back Squats (3 sets of 6 to 10 reps), Glute Ham Raises (3 sets of 8 to 12 reps), Alternating Forward Lunges (3 sets of 10 to 15 reps per leg), Lying Hamstring Curls (2-3 sets of 12 to 15 reps), and Standing Smith Machine Calf Raises (3 sets of 8 to 12 reps). This workout targets the major muscle groups of the lower body, including quads, hamstrings, glutes, and calves. It includes compound exercises like back squats and isolation movements like hamstring curls.
+Upper 2 features Pull Ups (3 sets of 5 to 10 reps), Incline Dumbbell Bench Press (3 sets of 8 to 10 reps), Standing Barbell Push Press (3 sets of 8 to 12 reps), Cable Lat Pullovers (3 sets of 10 to 15 reps), Bodyweight Push-ups (2 sets of 10 to 20 reps), EZ-bar Bicep Curl (3 sets of 10 to 15 reps), and Dumbbell Tricep Kickbacks (3 sets of 12 to 15 reps). Similar to Upper 1, this workout targets the chest, back, shoulders, and arms with a combination of compound and isolation exercises.
+Lower 2 includes Leg Press (3 sets of 8 to 12 reps), Romanian Deadlift (3 sets of 8 to 10 reps), Unilateral Dumbbell Shrug (3 sets of 8 to 15 reps per side), Leg Extensions (2-3 sets of 12 to 15 reps), Seated Machine Calf Raises (3-4 sets of 12 to 20 reps), and Hanging Leg Raises (3-4 sets of 10 to 20 reps). This second lower body workout provides variation from Lower 1, incorporating exercises like leg press and Romanian deadlifts to target the muscles from slightly different angles. The inclusion of hanging leg raises also targets the abdominal muscles.
+The variation in exercises between Upper 1 and Upper 2, as well as Lower 1 and Lower 2, helps to stimulate the muscles from different angles and potentially reduce the risk of plateaus due to accommodation. The combination of compound and isolation exercises ensures comprehensive muscle development for both the upper and lower body.
+Table 4: Hevy App - 4 Day Upper/Lower Split
+Workout
+	Exercise
+	Sets
+	Reps
+	Frequency
+	Upper 1
+	Barbell Bench Press
+	3
+	6-10
+	2/week
+	Upper 1
+	Barbell Bent Over Rows
+	3
+	6-10
+	2/week
+	Upper 1
+	Seated Dumbbell Shoulder Press
+	3
+	8-12
+	2/week
+	Upper 1
+	Lat Pulldowns
+	3
+	8-12
+	2/week
+	Upper 1
+	Low Cable Chest Flyes
+	2
+	12-15
+	1/week
+	Upper 1
+	Dumbbell Curl
+	2
+	12-15
+	1/week
+	Upper 1
+	Overhead Dumbbell Tricep Extensions
+	2
+	12-15
+	1/week
+	Upper 1
+	Rope Cable Face Pulls
+	2
+	15-25
+	1/week
+	Lower 1
+	Back Squats
+	3
+	6-10
+	2/week
+	Lower 1
+	Glute Ham Raises
+	3
+	8-12
+	1/week
+	Lower 1
+	Alternating Forward Lunges
+	3
+	10-15
+	1/week
+	Lower 1
+	Lying Hamstring Curls
+	2-3
+	12-15
+	1/week
+	Lower 1
+	Standing Smith Machine Calf Raises
+	3
+	8-12
+	1/week
+	Upper 2
+	Pull Ups
+	3
+	5-10
+	2/week
+	Upper 2
+	Incline Dumbbell Bench Press
+	3
+	8-10
+	1/week
+	Upper 2
+	Standing Barbell Push Press
+	3
+	8-12
+	1/week
+	Upper 2
+	Cable Lat Pullovers
+	3
+	10-15
+	1/week
+	Upper 2
+	Bodyweight Push-ups
+	2
+	10-20
+	1/week
+	Upper 2
+	EZ-bar Bicep Curl
+	3
+	10-15
+	1/week
+	Upper 2
+	Dumbbell Tricep Kickbacks
+	3
+	12-15
+	1/week
+	Lower 2
+	Leg Press
+	3
+	8-12
+	2/week
+	Lower 2
+	Romanian Deadlift
+	3
+	8-10
+	1/week
+	Lower 2
+	Unilateral Dumbbell Shrug
+	3
+	8-15
+	1/week
+	Lower 2
+	Leg Extensions
+	2-3
+	12-15
+	1/week
+	Lower 2
+	Seated Machine Calf Raises
+	3-4
+	12-20
+	1/week
+	Lower 2
+	Hanging Leg Raises
+	3-4
+	10-20
+	1/week
+	
+
+
+
+
+
+*   **Template 5: Built With Science Upper/Lower Routine (from Jefit) [18]:**
+   Built With Science offers a beginner-level 4-day UL routine available on Jefit, designed with a focus on bulking.[18] This plan involves four workout days per week, alternating between upper and lower body sessions, with rest days strategically placed to avoid consecutive upper or lower body workouts.
+
+   **Upper Body 1** includes Dumbbell Bench Press (3 sets of 10 reps), Dumbbell Incline Bench Row (3 sets of 10 reps), Machine Fly (3 sets of 15 reps), Cable Lat Pulldown (Wide Grip) (3 sets of 10 reps), Cable One-Arm Lateral Raise (3 sets of 15 reps), Cable Bicep Curl (2 sets of 12 reps), and Cable Tricep Pushdown (Rope) (3 sets of 12 reps). The rest periods are 2 minutes for most exercises, except for the Cable One-Arm Lateral Raise, which has a 1-minute rest. The higher rep ranges (10-15) in this beginner template are consistent with recommendations for promoting muscle hypertrophy and building a solid foundation for lifting heavier weights.[11] Higher reps can lead to greater metabolic stress, a key driver of muscle growth.
+
+   The use of machine exercises like Machine Fly and Cable Lat Pulldown can be beneficial for beginners as they often provide more stability and can be easier to learn proper form compared to free weight exercises.[1, 11] This allows beginners to focus on muscle activation and build confidence before progressing to more complex movements. The routine also incorporates dumbbell and cable exercises, providing a variety of stimuli for the upper body muscles. Details for the other three workout days (Upper Body 2, Lower Body 1, and Lower Body 2) are not provided in the available snippet.
+
+   **Table 5: Built With Science Upper/Lower Routine (Upper Body 1)**
+
+Workout
+	Exercise
+	Sets
+	Reps
+	Frequency
+	Rest
+	Upper 1
+	Dumbbell Bench Press
+	3
+	10
+	1/week
+	2:00
+	Upper 1
+	Dumbbell Incline Bench Row
+	3
+	10
+	1/week
+	2:00
+	Upper 1
+	Machine Fly
+	3
+	15
+	1/week
+	2:00
+	Upper 1
+	Cable Lat Pulldown (Wide Grip)
+	3
+	10
+	1/week
+	2:00
+	Upper 1
+	Cable One-Arm Lateral Raise
+	3
+	15
+	1/week
+	1:00
+	Upper 1
+	Cable Bicep Curl
+	2
+	12
+	1/week
+	2:00
+	Upper 1
+	Cable Tricep Pushdown (Rope)
+	3
+	12
+	1/week
+	2:00
+	            * Key Considerations and Recommendations for UL Routines: When following an UL routine, it is important to ensure a balance between compound and isolation exercises to effectively target all muscle groups in both the upper and lower body.11 Compound exercises like squats, deadlifts, bench press, and rows should typically be prioritized at the beginning of each workout to maximize their effectiveness for building strength and overall muscle mass. The frequency of training (3 or 4 days per week) should be adjusted based on individual recovery capabilities and training goals.6 Proper form is crucial for all exercises, especially compound movements, to prevent injuries and ensure that the targeted muscles are being worked effectively. As with any training program, incorporating progressive overload by gradually increasing the weight, reps, or sets over time is essential for continued progress. Core exercises can be included on either upper or lower body days or performed as a separate session to strengthen the abdominal and lower back muscles.
+IV. Full Body Workout Templates
+            * Overview of Full Body Training Routines and their Scientific Basis:
+Full body workout routines involve training all major muscle groups within the same workout session.3 The primary rationale behind this approach is that it allows for frequent stimulation of muscle protein synthesis for each muscle group throughout the week, which can be particularly beneficial for muscle growth and strength gains, especially for beginners and individuals with limited time for training.3 Research suggests that training each muscle group 2-3 times per week can optimize this process.10
+A typical full body workout often includes a combination of compound exercises that target multiple muscle groups simultaneously, such as squats, deadlifts, bench press, overhead press, and rows, along with some isolation exercises to target specific muscles.13 These routines often incorporate exercises that cover key movement patterns, including squatting, hinging, pushing, pulling, and carrying.22 The common training frequency for full body workouts is 2-3 days per week for beginners, with the potential for more frequent training for advanced individuals.3 For novices, training the entire body 2-3 days per week is generally recommended.11
+Full body workouts can be highly time-efficient, as they allow individuals to target all major muscle groups in a single session, making them a practical option for those with busy schedules.4 Instead of dedicating separate days to different body parts, a full body routine provides a comprehensive workout in a shorter amount of time. Furthermore, the frequent stimulation of muscles in full body workouts can lead to faster improvements in overall strength and conditioning, as well as potentially enhance fat loss due to the higher total muscle activation and increased calorie expenditure during and after the workout.14 Engaging multiple large muscle groups in each session can create a greater metabolic demand compared to workout routines that isolate specific muscle groups.
+            * Science-Backed Full Body Templates from Reputable Sources:
+               * Template 6: Legion Athletics - 3 Day Full-Body Workout Routine 13:
+Legion Athletics provides a 3-day full body workout routine where each workout emphasizes different exercises, focusing on press, squat, and pull movements across the three sessions.13 This variation helps ensure balanced muscle development and prevents overtraining of specific muscle groups.
+Workout 1 (Press Emphasis) includes Barbell Bench Press (4 sets of 4-6 reps), Seated Cable Row (4 sets of 6-8 reps), Dumbbell Side Lateral Raise (4 sets of 8-10 reps), and Lying Leg Curl (4 sets of 8-10 reps). This workout prioritizes pushing movements for the upper body while also incorporating a pulling movement (Seated Cable Row) and a leg exercise.
+Workout 2 (Squat Emphasis) features Barbell Back Squat (4 sets of 4-6 reps), Standing Military Press (4 sets of 4-6 reps), Pull-up (weighted if possible) (3 sets of 6-8 reps), and Standing EZ Bar Curl (4 sets of 8-10 reps). This session focuses on the squat movement for the lower body, a pushing movement for the upper body (Standing Military Press), and a pulling movement (Pull-up), along with an arm exercise.
+Workout 3 (Pull Emphasis) comprises Barbell Deadlift (4 sets of 4-6 reps), Dumbbell Bench Press (4 sets of 6-8 reps), Leg Press (4 sets of 6-8 reps), and Dumbbell Side Lateral Raise (4 sets of 8-10 reps). This workout emphasizes a major pulling movement (Barbell Deadlift) while also including a pushing movement (Dumbbell Bench Press) and exercises for the legs and shoulders.
+This routine is performed 3 days per week with rest days in between, allowing for sufficient recovery. The sets and reps primarily focus on lower rep ranges (4-8) for strength development, with some exercises in the hypertrophy range (8-10). The variation in exercise emphasis across the week allows for a balance between different movement patterns and muscle groups, potentially reducing the risk of overuse injuries. The inclusion of compound exercises like Barbell Bench Press, Barbell Back Squat, Standing Military Press, Pull-ups, and Barbell Deadlift makes this routine effective for building overall strength.
+Table 6: Legion Athletics - 3 Day Full-Body Workout Routine
+Workout Day
+	Emphasis
+	Exercise
+	Sets
+	Reps
+	Frequency
+	1
+	Press
+	Barbell Bench Press
+	4
+	4-6
+	1/week
+	1
+	Press
+	Seated Cable Row
+	4
+	6-8
+	1/week
+	1
+	Press
+	Dumbbell Side Lateral Raise
+	4
+	8-10
+	1/week
+	1
+	Press
+	Lying Leg Curl
+	4
+	8-10
+	1/week
+	2
+	Squat
+	Barbell Back Squat
+	4
+	4-6
+	1/week
+	2
+	Squat
+	Standing Military Press
+	4
+	4-6
+	1/week
+	2
+	Squat
+	Pull-up (weighted if possible)
+	3
+	6-8
+	1/week
+	2
+	Squat
+	Standing EZ Bar Curl
+	4
+	8-10
+	1/week
+	3
+	Pull
+	Barbell Deadlift
+	4
+	4-6
+	1/week
+	3
+	Pull
+	Dumbbell Bench Press
+	4
+	6-8
+	1/week
+	3
+	Pull
+	Leg Press
+	4
+	6-8
+	1/week
+	3
+	Pull
+	Dumbbell Side Lateral Raise
+	4
+	8-10
+	1/week
+	
+
+
+
+
+
+*   **Template 7: Built With Science - Best Full Body Workout (3 Day Split) [14]:**
+   Built With Science offers a detailed 3-day full body workout plan designed for muscle growth, providing specific exercise selection and rationale based on scientific principles.[14] This routine is intended to be performed three times per week, typically on Monday, Wednesday, and Friday.
+
+   **Workout 1** focuses on the upper chest, lower body, mid and upper back, hamstrings, biceps, and triceps, including Incline Dumbbell Press (3 sets of 8-12 reps), Barbell Squats (3 sets of 6-8 reps), Dumbbell Chest Supported Row (3 sets of 8-12 reps), Leg Curls (3 sets of 10-15 reps), and a superset of Lying Incline Dumbbell Curls and Dumbbell Overhead Extensions (3 sets of 8-12 reps).
+
+   **Workout 2** introduces variety and targets the mid and lower chest, hamstrings, upper and outer back, glutes, side deltoids, and abs, featuring Barbell Bench Press (3 sets of 4-6 reps), Romanian Deadlift (3 sets of 6-8 reps), Lat Pulldown (3 sets of 8-12 reps), Glute-Focused Walking Lunges (3 sets of 6-10 reps per leg), and a superset of Behind The Body Cable Lateral Raises and Reverse Crunches (3 sets of 10-15 reps).
+
+   **Workout 3** targets the front shoulders, lats, glutes, quads, chest, calves, and rear deltoids, including Seated Dumbbell Shoulder Press (3 sets of 8-12 reps), Lat-Focused Dumbbell Row (3 sets of 8-12 reps), Hip Thrust (3 sets of 10-15 reps), Leg Extensions (3 sets of 10-15 reps), Chest Flyes (3 sets of 10-15 reps), and a superset of Standing Calf Raises and Reverse Cable Flyes (3 sets of 10-15 reps).
+
+   The inclusion of supersets in this routine increases workout density and allows for more work to be done in a shorter period. The exercise selection aims to target all major muscle groups with a focus on both compound movements for overall development and isolation exercises for specific muscle groups. The rationale behind choosing specific exercises is often provided, referencing their effectiveness based on scientific evidence and EMG analysis.
+
+   **Table 7: Built With Science - Best Full Body Workout (3 Day Split)**
+
+Workout Day
+	Exercise
+	Sets
+	Reps
+	Frequency
+	1
+	Incline Dumbbell Press
+	3
+	8-12
+	1/week
+	1
+	Barbell Squats
+	3
+	6-8
+	1/week
+	1
+	Dumbbell Chest Supported Row
+	3
+	8-12
+	1/week
+	1
+	Leg Curls
+	3
+	10-15
+	1/week
+	1
+	Superset: Lying Incline DB Curls & DB Overhead Extensions
+	3
+	8-12
+	1/week
+	2
+	Barbell Bench Press
+	3
+	4-6
+	1/week
+	2
+	Romanian Deadlift
+	3
+	6-8
+	1/week
+	2
+	Lat Pulldown
+	3
+	8-12
+	1/week
+	2
+	Glute-Focused Walking Lunges
+	3
+	6-10
+	1/week
+	2
+	Superset: Behind The Body Cable Lateral Raises & Reverse Crunches
+	3
+	10-15
+	1/week
+	3
+	Seated Dumbbell Shoulder Press
+	3
+	8-12
+	1/week
+	3
+	Lat-Focused Dumbbell Row
+	3
+	8-12
+	1/week
+	3
+	Hip Thrust
+	3
+	10-15
+	1/week
+	3
+	Leg Extensions
+	3
+	10-15
+	1/week
+	3
+	Superset: Standing Calf Raises & Reverse Cable Flyes
+	3
+	10-15
+	1/week
+	
+
+
+
+
+
+*   **Template 8: Full Body Science-Based Workout (from Jefit) [24]:**
+   Jefit offers an intermediate-level 3-day full body bulking plan described as a science-based workout.[24] This routine is designed for muscle hypertrophy and is intended to be performed three times per week (Tuesday, Thursday, Saturday), alternating between Workout A and Workout B each week.
+
+   **Workout A** includes Barbell Bench Press (3 sets of 10 reps), Barbell Squat (3 sets of 10 reps), Pull-Up (3 sets of 8 reps), Machine Leg Curl (Prone) (3 sets of 8 reps), Dumbbell Shoulder Press (2 sets of 10 reps), Cable Rope Face Pull (2 sets of 15 reps), Barbell Drag Curl (2 sets of 8 reps), and Machine Calf Raise (2 sets of 15 reps). The rest periods are 3 minutes for the compound exercises (Barbell Bench Press, Barbell Squat, Pull-Up) and 1.5-2 minutes for the isolation exercises. The moderate rep ranges (8-15) and longer rest periods for compound exercises are typical for hypertrophy-focused training.
+
+   The alternating Workout A and B structure provides variation and ensures that all muscle groups are trained adequately throughout the week. The specific exercises in Workout B are not detailed in the provided snippet. The routine also incorporates a periodized approach over a 12-week duration, using different microcycles with varying Repetitions in Reserve (RIR), suggesting a structured progression for muscle growth.
+
+   **Table 8: Full Body Science-Based Workout (Workout A)**
+
+Workout Day
+	Exercise
+	Sets
+	Reps
+	Frequency
+	Rest
+	A
+	Barbell Bench Press
+	3
+	10
+	1-2/week
+	3:00
+	A
+	Barbell Squat
+	3
+	10
+	1-2/week
+	3:00
+	A
+	Pull-Up
+	3
+	8
+	1-2/week
+	3:00
+	A
+	Machine Leg Curl (Prone)
+	3
+	8
+	1-2/week
+	2:00
+	A
+	Dumbbell Shoulder Press
+	2
+	10
+	1-2/week
+	2:00
+	A
+	Cable Rope Face Pull
+	2
+	15
+	1-2/week
+	1:30
+	A
+	Barbell Drag Curl
+	2
+	8
+	1-2/week
+	1:30
+	A
+	Machine Calf Raise
+	2
+	15
+	1-2/week
+	1:30
+	                  * Key Considerations and Recommendations for Full Body Routines: When following a full body routine, it is essential to focus on compound exercises that target multiple muscle groups to maximize the efficiency of each workout.4 Beginners should start with a lower training frequency, such as 2-3 days per week, to allow for sufficient recovery between sessions.11 Due to the comprehensive nature of these workouts, it is important to manage the overall training volume and intensity carefully to avoid overtraining. Incorporating variations in exercise selection across different full body workouts can help target muscles from different angles and prevent plateaus in progress.
+V. General Guidelines and Recommendations from NSCA and ACSM
+The National Strength and Conditioning Association (NSCA) and the American College of Sports Medicine (ACSM) are reputable organizations that provide evidence-based guidelines for resistance training. Both organizations recommend that a strength training program should be performed a minimum of two non-consecutive days each week for healthy adults.11 The NSCA suggests training frequencies of 2-3 days per week for novice individuals, 3-4 days per week for intermediate individuals, and 4-5 days per week for advanced individuals.23 Similar recommendations are made for hypertrophy training.23
+Regarding intensity, the NSCA recommends loads corresponding to 60-70% of 1RM for novice to intermediate individuals aiming for muscular strength, and 80-100% of 1RM for advanced individuals. For hypertrophy, the recommendation is 70-85% of 1RM for novice to intermediate, and 70-100% for advanced.11 The ACSM also provides similar guidelines for load and repetitions based on the training goal.11
+In terms of volume, both organizations generally recommend 1-3 sets of 8-12 repetitions for novice to intermediate individuals focusing on strength and hypertrophy, and 2-4 sets of 10-25 repetitions for muscular endurance.11 Advanced lifters may perform a higher number of sets and vary their repetition ranges. Exercise selection should include 8-10 exercises that target all major muscle groups, with a general guideline to perform multiple-joint exercises before single-joint exercises.11 Examples of exercises for different muscle groups are provided by both NSCA and ACSM.11
+The workout templates presented in this report generally align with these recommendations. They incorporate a mix of compound and isolation exercises targeting all major muscle groups, and they utilize set and repetition ranges that are appropriate for the stated goals (strength, hypertrophy, or general fitness). The frequency of training suggested by the templates also falls within the recommended ranges based on the individual's experience level. Both NSCA and ACSM emphasize that these are general guidelines, and the most effective training program is one that is individualized to meet the specific needs, goals, and abilities of the person following it. Factors such as training experience, fitness goals, recovery capacity, and available time should all be considered when choosing a workout template.
+VI. Conclusion: Summary of Science-Based Workout Templates and Important Considerations
+This report has presented several science-backed workout templates for Push/Pull/Legs (PPL), Upper/Lower (UL), and Full Body routines, drawing from reputable sources in the fitness industry. The 3-day PPL routine from Muscle & Strength provides a solid foundation for beginners, focusing on fundamental compound exercises and moderate rep ranges. The PPL portion of the Legion Athletics PPLUL split offers a more strength-focused approach with lower rep ranges and longer rest periods, suitable for intermediate lifters. The Built With Science PPL routine provides a comprehensive, high-frequency program with detailed scientific rationale for exercise selection, ideal for advanced individuals seeking to optimize muscle growth.
+The Upper/Lower split templates from Hevy App and Built With Science (via Jefit) offer effective strategies for training each major muscle group twice per week, with variations in exercise selection and rep ranges to suit different experience levels and goals. The Hevy App template provides a well-rounded 4-day split with a mix of compound and isolation exercises in the hypertrophy range, while the Built With Science beginner routine on Jefit utilizes higher reps and machine exercises to build a foundation.
+The Full Body routines from Legion Athletics and Built With Science offer efficient ways to train all major muscle groups in each session, with variations in exercise emphasis and the use of supersets to enhance workout density. The Jefit full body routine provides an intermediate-level hypertrophy-focused plan with a periodized structure.
+When selecting a workout template, individuals should consider their fitness goals, training experience, and the amount of time they can dedicate to training. Regardless of the chosen split, adherence to fundamental principles such as proper form, progressive overload, adequate rest and recovery, and consistency are crucial for achieving desired results. These templates serve as excellent starting points that can be further adjusted based on individual needs and preferences.
+VII. Disclaimer: Informational Purposes Only - Not Medical Advice
+The information provided in this report is intended for general informational purposes only and does not constitute medical advice. It is essential to consult with a qualified healthcare professional or certified fitness trainer before beginning any new exercise program, especially if you have any pre-existing health conditions or concerns. The workout templates and recommendations presented herein should not be interpreted as a substitute for professional medical guidance or personalized fitness instruction. Engaging in any exercise program involves a risk of injury, and it is your responsibility to exercise caution and ensure that you are physically capable of performing the exercises.
+Works cited
+                  1. 3 Day Push/Pull/Legs (PPL) Workout for Beginners | Muscle & Strength, accessed on April 4, 2025, https://www.muscleandstrength.com/workouts/3-day-PPL-workout-for-beginners
+                  2. Push Pull Legs Upper Lower (PPLUL) Split: Complete Guide | Legion, accessed on April 4, 2025, https://legionathletics.com/pplul/
+                  3. Routines and Guide for Building Muscle with Push-Pull Workouts - Healthline, accessed on April 4, 2025, https://www.healthline.com/nutrition/push-pull-workout
+                  4. A Personal Trainer Explains the Push Pull Legs Routine | Garage Gym Reviews, accessed on April 4, 2025, https://www.garagegymreviews.com/push-pull-legs-routine
+                  5. The Best "Push Pull Legs" Routine For Muscle Growth (Based On ..., accessed on April 4, 2025, https://builtwithscience.com/fitness-tips/push-pull-legs-routine/
+                  6. The Best Workout Splits For Every Goal | Gymshark Central, accessed on April 4, 2025, https://www.gymshark.com/blog/article/the-best-workout-splits-for-every-goal
+                  7. The Push/Pull/Legs Routine for Muscle Gains | Aston University, accessed on April 4, 2025, https://www.aston.ac.uk/sport/news/tips/fitness-exercise/push-pull-legs
+                  8. Push Pull Legs: The Ultimate Beginner Guide | Brad Newton Fitness, accessed on April 4, 2025, https://www.bradnewtonfitness.com/the-ultimate-beginner-guide-push-pull-legs/
+                  9. Push Pull Legs (PPL) Training Split - Ultimate Guide with Routines & Schedule - Hevy, accessed on April 4, 2025, https://www.hevyapp.com/push-pull-legs-ultimate-guide/
+                  10. Best Upper Lower Split Workout Routines - Built With Science, accessed on April 4, 2025, https://builtwithscience.com/workouts/best-workout-split/
+                  11. ACSM Information On… - Resistance Training for Health and Fitness - Prescription to Get Active, accessed on April 4, 2025, https://www.prescriptiontogetactive.com/static/pdfs/resistance-training-ACSM.pdf
+                  12. Utilize proper workout structure and exercise order - Human Kinetics, accessed on April 4, 2025, https://us.humankinetics.com/blogs/excerpt/utilize-proper-workout-structure-and-exercise-order
+                  13. The Best Full-Body Workout Routines for Building Muscle, accessed on April 4, 2025, https://legionathletics.com/full-body-workout-routine/
+                  14. The #1 Full Body Workout Plan for Growth (FULLY EXPLAINED), accessed on April 4, 2025, https://builtwithscience.com/workouts/best-full-body-workout/
+                  15. The Best Science-Based Full Body Workout for Size and Strength (“Workout B”) - YouTube, accessed on April 4, 2025, https://m.youtube.com/watch?v=MWcJuLKB7RY&t=0s
+                  16. Best free 4 day upper-lower split workout program for bodybuilding - Reddit, accessed on April 4, 2025, https://www.reddit.com/r/naturalbodybuilding/comments/1d7cms4/best_free_4_day_upperlower_split_workout_program/
+                  17. The Upper / Lower Body Split - Complete Workout Program Guide ..., accessed on April 4, 2025, https://www.hevyapp.com/upper-lower-split-complete-guide/
+                  18. Built With Science Upper/Lower - JEFIT, accessed on April 4, 2025, https://www.jefit.com/routines/601015/built-with-science-upperlower
+                  19. 4-6 Day Per Week Upper/Lower Hypertrophy Split - Weightology, accessed on April 4, 2025, https://weightology.net/muscle-gain/4-day-per-week-upper-lower-hypertrophy-split/
+                  20. Upper/Lower Split: The Best Workout Plan? - ISSA, accessed on April 4, 2025, https://www.issaonline.com/blog/post/upperlower-split-the-best-workout-plan
+                  21. 3-Day-a-Week Full Body Program for Team Sports - Elite FTS, accessed on April 4, 2025, https://www.elitefts.com/education/3-day-a-week-full-body-program-for-team-sports/
+                  22. Full Body Workout Plan | 30 Day Total Body Plan - ATHLEAN-X, accessed on April 4, 2025, https://learn.athleanx.com/articles/full-body-workout-plan
+                  23. American College of Sports Medicine position stand. Progression models in resistance training for healthy adults - PubMed, accessed on April 4, 2025, https://pubmed.ncbi.nlm.nih.gov/19204579/
+                  24. Full Body Science-Based Workout - JEFIT, accessed on April 4, 2025, https://www.jefit.com/routines/92555/full-body-science-based-workout-
