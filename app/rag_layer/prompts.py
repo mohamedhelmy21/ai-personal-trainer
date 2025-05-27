@@ -78,7 +78,7 @@ Plan for {date}:
         "carbs_g": ...,
         "fat_g": ...
       }},
-      "suggested_recipe": "...", // Only if the meal was replaced, otherwise null
+      "suggested_recipe": "...", 
       "explanation": "Clear, structured explanation for any change"
     }},
     // ... repeat for Lunch, Dinner, Snack, etc.

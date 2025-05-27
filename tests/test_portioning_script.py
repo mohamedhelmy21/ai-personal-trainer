@@ -23,9 +23,9 @@ user = UserProfile(
 # --------------------------------------
 # File Paths
 # --------------------------------------
-templates_path = "output/all_meal_templates.json"
+templates_path = "output/realistic_meal_templates.json"
 nutrition_data_path = "data/final_nutrition_data_with_tags.csv"
-output_path = "portioned_meal_templates.json"
+output_path = "output/portioned_meal_templates.json"
 
 # --------------------------------------
 # Run Portioning

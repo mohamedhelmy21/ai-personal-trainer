@@ -1,0 +1,422 @@
+[
+  {
+    "type": "Breakfast",
+    "components": {
+      "protein": "Eggs",
+      "carb": "Whole-Wheat Bread (Baladi)",
+      "fat": "Olive Oil",
+      "vegetables": ["Tomato", "Cucumber"],
+      "fruits": ["Bananas"]
+    },
+    "tags": ["egyptian", "classic", "high protein"]
+  },
+  {
+    "type": "Breakfast",
+    "components": {
+      "protein": "Fava Beans (Foul)",
+      "carb": "Pita Bread (Shami)",
+      "fat": "Olive Oil",
+      "vegetables": ["Tomato", "Parsley"],
+      "fruits": ["Oranges"]
+    },
+    "tags": ["egyptian", "plant-based", "fiber-rich"]
+  },
+  {
+    "type": "Breakfast",
+    "components": {
+      "protein": "Greek Yogurt",
+      "carb": "Oats",
+      "fat": "Walnuts",
+      "vegetables": [],
+      "fruits": ["Figs"]
+    },
+    "tags": ["mediterranean", "sweet", "high protein"]
+  },
+  {
+    "type": "Breakfast",
+    "components": {
+      "protein": "Cottage Cheese",
+      "carb": "Whole-Wheat Bread (Baladi)",
+      "fat": "Olive Oil",
+      "vegetables": ["Cucumber", "Lettuce"],
+      "fruits": []
+    },
+    "tags": ["high protein", "classic"]
+  },
+  {
+    "type": "Breakfast",
+    "components": {
+      "protein": "Feta Cheese",
+      "carb": "Multigrain Bread",
+      "fat": "Olive Oil",
+      "vegetables": ["Tomato", "Green Bell Pepper"],
+      "fruits": []
+    },
+    "tags": ["mediterranean", "vegetarian", "balanced"]
+  },
+  {
+    "type": "Breakfast",
+    "components": {
+      "protein": "Greek Yogurt",
+      "carb": "Oats",
+      "fat": "Almonds",
+      "vegetables": [],
+      "fruits": ["Strawberries"]
+    },
+    "tags": ["sweet", "high protein", "fiber"]
+  },
+  {
+    "type": "Breakfast",
+    "components": {
+      "protein": "Eggs",
+      "carb": "White Bread",
+      "fat": "Ghee",
+      "vegetables": ["Red Bell Pepper", "Spinach"],
+      "fruits": []
+    },
+    "tags": ["universal", "high protein", "vegetable"]
+  },
+  {
+    "type": "Breakfast",
+    "components": {
+      "protein": "Peanuts",
+      "carb": "Multigrain Bread",
+      "fat": "Peanuts",
+      "vegetables": [],
+      "fruits": ["Bananas"]
+    },
+    "tags": ["universal", "energy", "plant protein"]
+  },
+  {
+    "type": "Breakfast",
+    "components": {
+      "protein": "Fava Beans (Foul)",
+      "carb": "Tortilla (Wrap)",
+      "fat": "Olive Oil",
+      "vegetables": ["Parsley", "Tomato"],
+      "fruits": ["Apples"]
+    },
+    "tags": ["egyptian", "alternative", "balanced"]
+  },
+  {
+    "type": "Breakfast",
+    "components": {
+      "protein": "Cottage Cheese",
+      "carb": "Oats",
+      "fat": "Walnuts",
+      "vegetables": [],
+      "fruits": ["Apples"]
+    },
+    "tags": ["high protein", "sweet", "classic"]
+  }, 
+  {
+    "type": "Lunch",
+    "components": {
+      "protein": "Chicken Breast",
+      "carb": "White Rice",
+      "fat": "Olive Oil",
+      "vegetables": ["Broccoli", "Carrot"]
+    },
+    "tags": ["universal", "lean protein", "classic"]
+  },
+  {
+    "type": "Lunch",
+    "components": {
+      "protein": "Beef Steak",
+      "carb": "Whole-Wheat Bread (Baladi)",
+      "fat": "Olive Oil",
+      "vegetables": ["Lettuce", "Tomato"]
+    },
+    "tags": ["egyptian", "protein-rich", "balanced"]
+  },
+  {
+    "type": "Lunch",
+    "components": {
+      "protein": "Fava Beans (Foul)",
+      "carb": "White Rice",
+      "fat": "Olive Oil",
+      "vegetables": ["Cabbage", "Parsley"]
+    },
+    "tags": ["egyptian", "plant-based", "fiber"]
+  },
+  {
+    "type": "Lunch",
+    "components": {
+      "protein": "Shrimp",
+      "carb": "White Rice",
+      "fat": "Vegetable Oil",
+      "vegetables": ["Green Bell Pepper", "Carrot"]
+    },
+    "tags": ["mediterranean", "seafood", "fresh"]
+  },
+  {
+    "type": "Lunch",
+    "components": {
+      "protein": "Lentils",
+      "carb": "Whole-Wheat Bread (Baladi)",
+      "fat": "Olive Oil",
+      "vegetables": ["Tomato", "Cucumber"]
+    },
+    "tags": ["plant-based", "egyptian", "fiber"]
+  },
+  {
+    "type": "Lunch",
+    "components": {
+      "protein": "Turkey Breast",
+      "carb": "White Rice",
+      "fat": "Olive Oil",
+      "vegetables": ["Zucchini", "Carrot"]
+    },
+    "tags": ["high protein", "light", "universal"]
+  },
+  {
+    "type": "Lunch",
+    "components": {
+      "protein": "Talipa (Bulty) Fish",
+      "carb": "White Rice",
+      "fat": "Olive Oil",
+      "vegetables": ["Cabbage", "Carrot"] 
+    },
+    "tags": ["egyptian", "fish", "summer"]
+  },
+  {
+    "type": "Lunch",
+    "components": {
+      "protein": "Ground Beef",
+      "carb": "Pasta",
+      "fat": "Olive Oil",
+      "vegetables": ["Spinach", "Tomato Puree"]
+    },
+    "tags": ["universal", "protein-rich", "classic"]
+  },
+  {
+    "type": "Lunch",
+    "components": {
+      "protein": "Chicken Thigh",
+      "carb": "White Rice",
+      "fat": "Sunflower Oil",
+      "vegetables": ["Green Bell Pepper", "Tomato"]
+    },
+    "tags": ["egyptian", "high protein", "variety"]
+  },
+  {
+    "type": "Lunch",
+    "components": {
+      "protein": "Beef Shank",
+      "carb": "White Rice",
+      "fat": "Vegetable Oil",
+      "vegetables": ["Cauliflower", "Parsley"]
+    },
+    "tags": ["egyptian", "balanced", "fiber"]
+  },
+  {
+    "type": "Dinner",
+    "components": {
+      "protein": "Chicken Breast",
+      "carb": "Pita Bread (Shami)",
+      "fat": "Olive Oil",
+      "vegetables": ["Lettuce", "Cucumber"]
+    },
+    "tags": ["light", "protein-rich", "egyptian"]
+  },
+  {
+    "type": "Dinner",
+    "components": {
+      "protein": "Talipa (Bulty) Fish",
+      "carb": "White Rice",
+      "fat": "Olive Oil",
+      "vegetables": ["Broccoli", "Carrot"]
+    },
+    "tags": ["fish", "classic", "balanced"]
+  },
+  {
+    "type": "Dinner",
+    "components": {
+      "protein": "Lentils",
+      "carb": "Multigrain Bread",
+      "fat": "Olive Oil",
+      "vegetables": ["Spinach", "Red Bell Pepper"]
+    },
+    "tags": ["plant-based", "egyptian", "fiber"]
+  },
+  {
+    "type": "Dinner",
+    "components": {
+      "protein": "Turkey Breast",
+      "carb": "Pasta",
+      "fat": "Olive Oil",
+      "vegetables": ["Zucchini", "Yellow Bell Pepper"]
+    },
+    "tags": ["high protein", "simple", "universal"]
+  },
+  {
+    "type": "Dinner",
+    "components": {
+      "protein": "Mozzarella Cheese",
+      "carb": "Whole-Wheat Bread (Baladi)",
+      "fat": "Olive Oil",
+      "vegetables": ["Tomato", "Lettuce"]
+    },
+    "tags": ["vegetarian", "egyptian", "light"]
+  },
+  {
+    "type": "Dinner",
+    "components": {
+      "protein": "Shrimp",
+      "carb": "White Rice",
+      "fat": "Vegetable Oil",
+      "vegetables": ["Cabbage", "Carrot"]
+    },
+    "tags": ["seafood", "fresh", "summer"]
+  },
+  {
+    "type": "Dinner",
+    "components": {
+      "protein": "Fava Beans (Foul)",
+      "carb": "Pita Bread (Shami)",
+      "fat": "Olive Oil",
+      "vegetables": ["Parsley", "Cucumber"]
+    },
+    "tags": ["plant-based", "egyptian", "classic"]
+  },
+  {
+    "type": "Dinner",
+    "components": {
+      "protein": "Eggs",
+      "carb": "Whole-Wheat Bread (Baladi)",
+      "fat": "Ghee",
+      "vegetables": ["Tomato", "Green Bell Pepper"]
+    },
+    "tags": ["universal", "high protein", "vegetarian"]
+  },
+  {
+    "type": "Dinner",
+    "components": {
+      "protein": "Chicken Thigh",
+      "carb": "White Rice",
+      "fat": "Sunflower Oil",
+      "vegetables": ["Zucchini", "Carrot"]
+    },
+    "tags": ["classic", "egyptian", "balanced"]
+  },
+  {
+    "type": "Dinner",
+    "components": {
+      "protein": "Cottage Cheese",
+      "carb": "Multigrain Bread",
+      "fat": "Olive Oil",
+      "vegetables": ["Lettuce", "Cucumber"]
+    },
+    "tags": ["high protein", "light", "vegetarian"]
+  }, 
+  {
+    "type": "Snack",
+    "components": {
+      "protein": "Greek Yogurt",
+      "carb": "",
+      "fat": "Walnuts",
+      "vegetables": [],
+      "fruits": ["Bananas"]
+    },
+    "tags": ["high protein", "sweet", "filling"]
+  },
+  {
+    "type": "Snack",
+    "components": {
+      "protein": "",
+      "carb": "",
+      "fat": "Almonds",
+      "vegetables": [],
+      "fruits": ["Apples"]
+    },
+    "tags": ["classic", "energy", "portable"]
+  },
+  {
+    "type": "Snack",
+    "components": {
+      "protein": "Cottage Cheese",
+      "carb": "",
+      "fat": "",
+      "vegetables": [],
+      "fruits": ["Peaches"]
+    },
+    "tags": ["high protein", "light", "sweet"]
+  },
+  {
+    "type": "Snack",
+    "components": {
+      "protein": "",
+      "carb": "Whole-Wheat Bread (Baladi)",
+      "fat": "Peanuts",
+      "vegetables": [],
+      "fruits": ["Bananas"]
+    },
+    "tags": ["plant protein", "energy", "filling"]
+  },
+  {
+    "type": "Snack",
+    "components": {
+      "protein": "Yogurt",
+      "carb": "",
+      "fat": "",
+      "vegetables": [],
+      "fruits": ["Figs"]
+    },
+    "tags": ["classic", "egyptian", "sweet"]
+  },
+  {
+    "type": "Snack",
+    "components": {
+      "protein": "",
+      "carb": "",
+      "fat": "Cashews",
+      "vegetables": [],
+      "fruits": ["Grapes"]
+    },
+    "tags": ["nuts", "fruit", "portable"]
+  },
+  {
+    "type": "Snack",
+    "components": {
+      "protein": "",
+      "carb": "Pita Bread (Shami)",
+      "fat": "Cheddar Cheese",
+      "vegetables": ["Cucumber"],
+      "fruits": []
+    },
+    "tags": ["savory", "classic", "mediterranean"]
+  },
+  {
+    "type": "Snack",
+    "components": {
+      "protein": "",
+      "carb": "",
+      "fat": "Pumpkin Seeds",
+      "vegetables": [],
+      "fruits": ["Oranges"]
+    },
+    "tags": ["plant protein", "fiber", "vitamin c"]
+  },
+  {
+    "type": "Snack",
+    "components": {
+      "protein": "",
+      "carb": "Multigrain Bread",
+      "fat": "Feta Cheese",
+      "vegetables": ["Tomato"],
+      "fruits": []
+    },
+    "tags": ["savory", "mediterranean", "light"]
+  },
+  {
+    "type": "Snack",
+    "components": {
+      "protein": "",
+      "carb": "",
+      "fat": "Sunflower Seeds",
+      "vegetables": [],
+      "fruits": ["Guava"]
+    },
+    "tags": ["fiber", "refreshing", "portable"]
+  }
+]

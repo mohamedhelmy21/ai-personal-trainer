@@ -17,5 +17,5 @@ user = UserProfile(
     meal_frequency=3
 )
 
-weekly_plan = generate_week_plan(user, "data/portioned_meal_templates.json")
+weekly_plan = generate_week_plan(user, "output/portioned_meal_templates.json")
 export_json(weekly_plan, "weekly_meal_plan.json") 
