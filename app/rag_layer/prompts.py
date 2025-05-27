@@ -26,7 +26,7 @@ You are given a daily meal plan (JSON) and must validate and revise it to ensure
     Only revise empty components if explicitly instructed by the user profile or if there is a genuine safety/nutrition issue (explain why in your response).  
     Otherwise, always leave intentionally empty slots EMPTY in the revised plan.
 - Do not guess macros; always calculate using: Calories = (Protein × 4) + (Carbs × 4) + (Fat × 9)
-- Adjust food items and portion sizes to meet macro targets within ±15%, but respect intentional empty fields.
+- Adjust food items and portion sizes to meet macro targets , but respect intentional empty fields.
 - Ensure all combinations are culturally logical and appealing.
 - Meet all macro targets for the day and for each meal, except for those components that are intentionally left empty.
 
