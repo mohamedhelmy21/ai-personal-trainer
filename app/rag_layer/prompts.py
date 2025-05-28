@@ -189,24 +189,6 @@ User asks: "{user_message}"
 You must answer clearly (≤120 words) and cite data if useful.
 '''
 
-CHATBOT_CLARIFY_PROMPT = '''
-User profile:
-{user_profile}
-
-Current {plan_type} plan (truncated):
-{plan_snippet}
-
-Relevant docs:
-{retrieved_context}
-
-User asks: "{user_message}"
-
-If the user's message is a complaint, question about pain, request for advice, or a suggestion/alternative—but NOT a direct request to change the plan—do NOT update the plan yet.
-Instead, reply with factual information, advice, or a follow-up question to clarify what the user wants (e.g., "Would you like me to replace this exercise for you?" or "Would you like me to update your plan with this change?").
-Only update and return the new plan if the user gives clear confirmation or a direct command to edit.
-Your answer must be ≤120 words and should never include the plan JSON.
-'''
-
 
 CHATBOT_PATCH_PROMPT = '''
 User profile:
@@ -269,11 +251,6 @@ IMPORTANT:
 - Do not change field order or naming.
 - Do not add or remove any elements unless requested.
 - Return only the JSON and nothing else.
-- If the user requests a replacement but does not specify the substitute, choose the most logical and context-appropriate alternative, using suggested in the provided context. Make only the minimal change needed.
-
-- If the user's message is a complaint, question about pain, request for advice, or a suggestion/alternative—but NOT a direct request to change the plan—do NOT update the plan yet.
-- Instead, reply with factual information, advice, or follow-up questions to clarify what the user wants (e.g., "Would you like me to replace this exercise for you?" or "Would you like me to update your plan with this change?").
-- Only update and return the new plan if the user gives clear confirmation or a direct command to edit.
+- If the user requests a replacement but does not specify the substitute, choose the most logical and context-appropriate alternative, using foods already present in the plan or suggested in the provided context. Make only the minimal change needed.
 
 '''
-

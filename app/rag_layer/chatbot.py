@@ -24,15 +24,10 @@ def detect_intent_with_llm(message: str, plan_type: str, user_profile: Dict[str,
         f"Plan: {json.dumps(plan)[:600]}\n"
         f"History: {history}\n"
         f"User message: {message}\n"
-        "Classify the user intent as one of: 'edit' (explicit request to change the plan), 'clarify' (complaint, suggestion, pain, or advice request), or 'info' (general question). Only return 'edit', 'clarify', or 'info'."
+        "Classify the user intent as either 'edit' if they want to change the plan, or 'info' if it's just a question. Only return 'edit' or 'info'."
     )
     response = call_llm(prompt, model="gpt-4.1", temperature=0.0, max_tokens=1)
-    if "edit" in response.lower():
-        return "edit"
-    elif "clarify" in response.lower():
-        return "clarify"
-    else:
-        return "info"
+    return "edit" if "edit" in response.lower() else "info"
 
 def extract_json_patch(reply: str) -> Any:
     try:
@@ -71,16 +66,6 @@ def chat(session_id: str, user_profile: Dict[str, Any], plan: Dict[str, Any], me
         )
         reply = call_llm(prompt, model="gpt-4o")
         updated_plan = plan
-    elif intent == "clarify":
-        prompt = CHATBOT_CLARIFY_PROMPT.format(
-            user_profile=json.dumps(user_profile),
-            plan_type=plan_type,
-            plan_snippet=json.dumps(plan)[:800],
-            retrieved_context=context,
-            user_message=message
-        )
-        reply = call_llm(prompt, model="gpt-4o")
-        updated_plan = plan
     else:
         # 'edit' intent: get LLM to generate a full updated plan
         prompt = CHATBOT_PATCH_PROMPT.format(
@@ -100,14 +85,11 @@ def chat(session_id: str, user_profile: Dict[str, Any], plan: Dict[str, Any], me
             updated_plan = {"days": [updated_plan]}
         # RAG-validation after edit
         try:
-            # Convert user_profile dict to UserProfile object for validation
-            from app.user import UserProfile
-            user_profile_obj = UserProfile(**user_profile)
             if plan_type == "meal":
-                validated_plan, explanations = validate_meal_plan(updated_plan, user_profile_obj)
+                validated_plan, explanations = validate_meal_plan(updated_plan, user_profile)
                 updated_plan = validated_plan
             else:
-                validated_plan, explanations = validate_workout_plan(updated_plan, user_profile_obj)
+                validated_plan, explanations = validate_workout_plan(updated_plan, user_profile)
                 updated_plan = validated_plan
             # Optionally, append explanations to reply
             if explanations:
