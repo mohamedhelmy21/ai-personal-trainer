@@ -34,7 +34,7 @@ def validate_workout_day(day_plan: Dict[str, Any], user_profile: UserProfile, da
         date=date or "",
         day_plan=day_plan
     )
-    llm_response = call_llm(prompt, model=kwargs.get("model", "gpt-4o"))
+    llm_response = call_llm(prompt, model=kwargs.get("model", "gpt-4.1-mini"))
     try:
         cleaned = clean_llm_json_output(llm_response)
         result = json.loads(cleaned)

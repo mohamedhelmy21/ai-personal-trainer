@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional, Literal
 from app.user import UserProfile
 from app.meal_planner.planner import generate_week_plan
 from app.meal_planner.portioning_engine import portion_all_templates
@@ -9,9 +9,23 @@ from app.workout_planner.planner import WeeklyPlanBuilder
 from app.workout_planner.registry import TEMPLATE_REGISTRY
 from app.rag_layer.meal_validator import validate_meal_plan as rag_validate_meal_plan
 from app.rag_layer.workout_validator import validate_workout_plan as rag_validate_workout_plan
+from app.rag_layer.chatbot import chat
 import pandas as pd
 
 app = FastAPI(title="AI Personal Trainer API", description="Meal & Workout Plan Generation with RAG/Chatbot integration.")
+
+class ChatMessage(BaseModel):
+    role: Literal["user", "assistant"]
+    content: str
+
+class ChatRequest(BaseModel):
+    session_id: str
+    user: Dict[str, Any]
+    plan: Dict[str, Any]
+    message: str
+    history: List[ChatMessage] = Field(default_factory=list)
+    plan_type: Literal["meal", "workout"]
+
 
 # --- Pydantic Schemas ---
 class UserProfileIn(BaseModel):
@@ -144,14 +158,17 @@ def validate_meal_plan(req: PlanValidationRequest):
 
 @app.post("/chat")
 def chat_with_trainer(req: ChatRequest):
-    """
-    Chatbot endpoint for conversational plan editing/queries (placeholder).
-    """
-    # TODO: Integrate with chatbot + RAG
-    # For now, just echo the message and plan
+    reply, updated_plan, updated_history = chat(
+        session_id=req.session_id,
+        user_profile=req.user,
+        plan=req.plan,
+        message=req.message,
+        plan_type=req.plan_type,
+    )
     return {
-        "response": f"Chatbot not yet implemented. You said: {req.message}",
-        "plan": req.plan
+        "response": reply,
+        "plan": updated_plan,
+        "history": updated_history,
     }
 
 @app.post("/generate-workout-plan")
