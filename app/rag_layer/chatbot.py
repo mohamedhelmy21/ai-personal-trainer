@@ -4,6 +4,7 @@ from app.rag_layer.rag_pipeline import retrieve_context, call_llm, get_meal_vect
 from app.rag_layer.meal_validator import validate_meal_plan
 from app.rag_layer.workout_validator import validate_workout_plan
 from app.rag_layer.prompts import CHATBOT_SYSTEM_PROMPT, CHATBOT_QA_PROMPT, CHATBOT_PATCH_PROMPT
+from app.user import UserProfile
 
 # In-memory chat history per session
 _CHAT_HISTORY: Dict[str, List[Dict[str, str]]] = {}
@@ -85,20 +86,33 @@ def chat(session_id: str, user_profile: Dict[str, Any], plan: Dict[str, Any], me
             updated_plan = {"days": [updated_plan]}
         # RAG-validation after edit
         try:
+            # Convert user_profile dict to UserProfile object for validators
+            user_profile_obj = user_profile
+            if not isinstance(user_profile, UserProfile):
+                try:
+                    user_profile_obj = UserProfile(**user_profile)
+                except Exception:
+                    # Handle nested dict under 'user' key (from some API schemas)
+                    if 'user' in user_profile:
+                        user_profile_obj = UserProfile(**user_profile['user'])
+                    else:
+                        raise
             if plan_type == "meal":
-                validated_plan, explanations = validate_meal_plan(updated_plan, user_profile)
+                validated_plan, explanations = validate_meal_plan(updated_plan, user_profile_obj)
                 updated_plan = validated_plan
             else:
-                validated_plan, explanations = validate_workout_plan(updated_plan, user_profile)
+                validated_plan, explanations = validate_workout_plan(updated_plan, user_profile_obj)
                 updated_plan = validated_plan
-            # Optionally, append explanations to reply
+            # Compose a summary reply for plan edits
+            summary = "Plan updated and validated."
             if explanations:
                 if isinstance(explanations, list):
-                    reply += "\n" + "\n".join([str(e) for e in explanations])
+                    summary += "\n" + "\n".join([str(e) for e in explanations])
                 else:
-                    reply += f"\n{explanations}"
+                    summary += f"\n{explanations}"
+            reply = summary
         except Exception as e:
-            reply += f"\n[ERROR: Plan validation failed: {e}]"
+            reply = f"[ERROR: Plan validation failed: {e}]"
 
     # Update assistant reply in history and save
     history = trim_history(history + [{"role": "assistant", "content": reply}])

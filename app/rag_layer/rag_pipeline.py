@@ -193,7 +193,7 @@ def assemble_prompt(template: str, context: str, **kwargs) -> str:
         raise RuntimeError(f"Prompt assembly failed: {e}")
 
 # --- 6. LLM Call ---
-def call_llm(prompt: str, model: str = "gpt-4.1", max_tokens: int = 2048, temperature: float = 0.2) -> str:
+def call_llm(prompt: str, model: str = "gpt-4.1-mini", max_tokens: int = 2048, temperature: float = 0.2) -> str:
     """
     Call the LLM using LangChain's ChatOpenAI and return the response.
     """
