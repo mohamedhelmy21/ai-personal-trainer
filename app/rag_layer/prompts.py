@@ -1,3 +1,5 @@
+SYSTEM_PREFIX = "SYSTEM: "
+
 MEAL_DAY_VALIDATION_PROMPT = """
 You are a world-class AI nutritionist with access to:
 1. ✅ Scientific nutrition knowledge (rules, food pairing, health guidelines)
@@ -189,6 +191,27 @@ User asks: "{user_message}"
 You must answer clearly (≤120 words) and cite data if useful.
 '''
 
+CHATBOT_CLARIFY_PROMPT = '''
+You are FitGPT, an AI assistant helping a user with their meal or workout plan.
+The user's last message is ambiguous and could be interpreted in multiple ways regarding an edit to their plan.
+Your goal is to ask a clear, concise question to understand their intent.
+
+User profile:
+{user_profile}
+
+Current {plan_type} plan (relevant snippet):
+{plan_snippet}
+
+User's ambiguous request: "{user_message}"
+
+Formulate a question to the user to clarify their request. For example, if they say "change chicken to fish", you might ask "Sure, which meal's chicken would you like to change to fish, and do you have a specific type of fish in mind?".
+Keep your question focused and directly related to the ambiguity.
+Do not attempt to make any changes to the plan. Only ask the clarifying question.
+
+Clarifying question:
+'''
+
+
 
 CHATBOT_PATCH_PROMPT = '''
 User profile:
@@ -199,58 +222,20 @@ Current {plan_type} plan (JSON):
 
 User request: "{user_message}"
 
-If the request requires modifying the plan, respond ONLY with the FULL updated {plan_type} plan JSON, 
-where all values are exactly the same as the original except for the minimum changes needed to satisfy the user's request.
-
-Do NOT omit, summarize, or reorder any fields. Make the smallest possible change(s) needed. 
-Do NOT add comments or explanations outside the JSON.
-
-**Examples:**
-
-Original plan:
+Your Response (Strict JSON Patch Format ONLY):
+You MUST output ONLY a valid JSON array of operations (RFC 6902) as a JSON patch.
+Example:
 [
   {{
-    "meals": {{
-      "breakfast": {{
-        "components": {{
-          "protein": {{
-            "item": "Greek Yogurt",
-            "portion": "120g"
-          }}
-        }}
-      }}
-    }},
-    "date": "Day 1"
+    "op": "replace",
+    "path": "/path/to/target/field",
+    "value": "new_value"
   }}
 ]
+- If the user's request can be translated into a valid JSON patch, provide that patch.
+- If the user's request IS NOT a valid edit request or CANNOT be translated into a JSON patch (e.g., it's a question, a greeting, or an invalid modification), output an empty JSON array: `[]`.
+- **IMPORTANT**: Ensure your patch operations do not corrupt the overall plan structure. For example, do not remove or alter the type of top-level keys like `days` in a workout plan, or the daily meal structure in a meal plan, unless specifically and clearly instructed to reconstruct it.
+- DO NOT include any explanations, apologies, or conversational text outside of the JSON array. Your entire response must be the JSON patch itself or an empty array.
 
-User request: "Replace Greek Yogurt with Eggs in breakfast on Day 1."
-
-Your reply:
-[
-  {{
-    "meals": {{
-      "breakfast": {{
-        "components": {{
-          "protein": {{
-            "item": "Eggs",
-            "portion": "120g"
-          }}
-        }}
-      }}
-    }},
-    "date": "Day 1"
-  }}
-]
-
-If the request does NOT require any change, return the original plan JSON exactly.
-
-IMPORTANT:
-- For meal plans, preserve all days and all nested structure.
-- For workout plans, preserve all days and all nested structure.
-- Do not change field order or naming.
-- Do not add or remove any elements unless requested.
-- Return only the JSON and nothing else.
-- If the user requests a replacement but does not specify the substitute, choose the most logical and context-appropriate alternative, using foods already present in the plan or suggested in the provided context. Make only the minimal change needed.
-
+Begin.
 '''
