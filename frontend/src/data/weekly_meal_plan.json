@@ -1,0 +1,981 @@
+[
+  {
+    "meals": {
+      "breakfast": {
+        "type": "Breakfast",
+        "components": {
+          "protein": {
+            "item": "Greek Yogurt",
+            "portion": "120g",
+            "calories": 126.0
+          },
+          "carb": {
+            "item": "Oats",
+            "portion": "168g",
+            "calories": 665.4
+          },
+          "fat": {
+            "item": "Walnuts",
+            "portion": "15g",
+            "calories": 105.3
+          },
+          "fruits": [
+            {
+              "item": "Figs",
+              "portion": "100g",
+              "calories": 82.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 42.199999999999996,
+          "fat_g": 26.9,
+          "carbs_g": 130.0,
+          "calories": 978.6999999999999
+        },
+        "tags": [
+          "mediterranean",
+          "sweet",
+          "high protein"
+        ]
+      },
+      "lunch": {
+        "type": "Lunch",
+        "components": {
+          "protein": {
+            "item": "Chicken Thigh",
+            "portion": "250g",
+            "calories": 362.5
+          },
+          "carb": {
+            "item": "White Rice",
+            "portion": "150g",
+            "calories": 522.0
+          },
+          "fat": {
+            "item": "Sunflower Oil",
+            "portion": "30g",
+            "calories": 273.6
+          },
+          "vegetables": [
+            {
+              "item": "Green Bell Pepper",
+              "portion": "50g",
+              "calories": 11.0
+            },
+            {
+              "item": "Tomato",
+              "portion": "50g",
+              "calories": 10.5
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 58.0,
+          "fat_g": 51.9,
+          "carbs_g": 120.0,
+          "calories": 1179.6
+        },
+        "tags": [
+          "egyptian",
+          "high protein",
+          "variety"
+        ]
+      },
+      "dinner": {
+        "type": "Dinner",
+        "components": {
+          "protein": {
+            "item": "Shrimp",
+            "portion": "180g",
+            "calories": 151.2
+          },
+          "carb": {
+            "item": "White Rice",
+            "portion": "140g",
+            "calories": 488.5
+          },
+          "fat": {
+            "item": "Vegetable Oil",
+            "portion": "15g",
+            "calories": 135.0
+          },
+          "vegetables": [
+            {
+              "item": "Cabbage",
+              "portion": "50g",
+              "calories": 14.5
+            },
+            {
+              "item": "Carrot",
+              "portion": "50g",
+              "calories": 22.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 47.599999999999994,
+          "fat_g": 18.2,
+          "carbs_g": 112.3,
+          "calories": 811.2
+        },
+        "tags": [
+          "seafood",
+          "fresh",
+          "summer"
+        ]
+      }
+    },
+    "totals": {
+      "calories": 2969.5,
+      "protein_g": 147.8,
+      "carbs_g": 362.3,
+      "fat_g": 97.0
+    },
+    "date": "Day 1"
+  },
+  {
+    "meals": {
+      "breakfast": {
+        "type": "Breakfast",
+        "components": {
+          "protein": {
+            "item": "Feta Cheese",
+            "portion": "120g",
+            "calories": 318.0
+          },
+          "carb": {
+            "item": "Multigrain Bread",
+            "portion": "160g",
+            "calories": 422.4
+          },
+          "fat": {
+            "item": "Olive Oil",
+            "portion": "15g",
+            "calories": 135.0
+          },
+          "vegetables": [
+            {
+              "item": "Tomato",
+              "portion": "50g",
+              "calories": 10.5
+            },
+            {
+              "item": "Green Bell Pepper",
+              "portion": "50g",
+              "calories": 11.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 40.4,
+          "fat_g": 49.4,
+          "carbs_g": 75.2,
+          "calories": 896.9
+        },
+        "tags": [
+          "mediterranean",
+          "vegetarian",
+          "balanced"
+        ]
+      },
+      "lunch": {
+        "type": "Lunch",
+        "components": {
+          "protein": {
+            "item": "Shrimp",
+            "portion": "220g",
+            "calories": 184.8
+          },
+          "carb": {
+            "item": "White Rice",
+            "portion": "187g",
+            "calories": 651.6
+          },
+          "fat": {
+            "item": "Vegetable Oil",
+            "portion": "30g",
+            "calories": 273.6
+          },
+          "vegetables": [
+            {
+              "item": "Green Bell Pepper",
+              "portion": "50g",
+              "calories": 11.0
+            },
+            {
+              "item": "Carrot",
+              "portion": "50g",
+              "calories": 22.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 59.300000000000004,
+          "fat_g": 34.5,
+          "carbs_g": 149.8,
+          "calories": 1143.0
+        },
+        "tags": [
+          "mediterranean",
+          "seafood",
+          "fresh"
+        ]
+      },
+      "dinner": {
+        "type": "Dinner",
+        "components": {
+          "protein": {
+            "item": "Talipa (Bulty) Fish",
+            "portion": "180g",
+            "calories": 171.0
+          },
+          "carb": {
+            "item": "White Rice",
+            "portion": "140g",
+            "calories": 488.5
+          },
+          "fat": {
+            "item": "Olive Oil",
+            "portion": "15g",
+            "calories": 135.0
+          },
+          "vegetables": [
+            {
+              "item": "Broccoli",
+              "portion": "50g",
+              "calories": 20.5
+            },
+            {
+              "item": "Carrot",
+              "portion": "50g",
+              "calories": 22.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 47.599999999999994,
+          "fat_g": 20.0,
+          "carbs_g": 112.3,
+          "calories": 837.0
+        },
+        "tags": [
+          "fish",
+          "classic",
+          "balanced"
+        ]
+      }
+    },
+    "totals": {
+      "calories": 2876.9,
+      "protein_g": 147.3,
+      "carbs_g": 337.3,
+      "fat_g": 103.9
+    },
+    "date": "Day 2"
+  },
+  {
+    "meals": {
+      "breakfast": {
+        "type": "Breakfast",
+        "components": {
+          "protein": {
+            "item": "Fava Beans (Foul)",
+            "portion": "154g",
+            "calories": 540.8
+          },
+          "carb": {
+            "item": "Pita Bread (Shami)",
+            "portion": "120g",
+            "calories": 333.6
+          },
+          "fat": {
+            "item": "Olive Oil",
+            "portion": "15g",
+            "calories": 135.0
+          },
+          "vegetables": [
+            {
+              "item": "Tomato",
+              "portion": "50g",
+              "calories": 10.5
+            },
+            {
+              "item": "Parsley",
+              "portion": "50g",
+              "calories": 22.0
+            }
+          ],
+          "fruits": [
+            {
+              "item": "Oranges",
+              "portion": "100g",
+              "calories": 52.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 53.6,
+          "fat_g": 20.5,
+          "carbs_g": 158.10000000000002,
+          "calories": 1093.9
+        },
+        "tags": [
+          "egyptian",
+          "plant-based",
+          "fiber-rich"
+        ]
+      },
+      "lunch": {
+        "type": "Lunch",
+        "components": {
+          "protein": {
+            "item": "Chicken Breast",
+            "portion": "241g",
+            "calories": 257.7
+          },
+          "carb": {
+            "item": "White Rice",
+            "portion": "150g",
+            "calories": 522.0
+          },
+          "fat": {
+            "item": "Olive Oil",
+            "portion": "30g",
+            "calories": 273.6
+          },
+          "vegetables": [
+            {
+              "item": "Broccoli",
+              "portion": "50g",
+              "calories": 20.5
+            },
+            {
+              "item": "Carrot",
+              "portion": "50g",
+              "calories": 22.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 65.9,
+          "fat_g": 36.699999999999996,
+          "carbs_g": 120.0,
+          "calories": 1095.8000000000002
+        },
+        "tags": [
+          "universal",
+          "lean protein",
+          "classic"
+        ]
+      },
+      "dinner": {
+        "type": "Dinner",
+        "components": {
+          "protein": {
+            "item": "Eggs",
+            "portion": "200g",
+            "calories": 276.0
+          },
+          "carb": {
+            "item": "Whole-Wheat Bread (Baladi)",
+            "portion": "120g",
+            "calories": 344.4
+          },
+          "fat": {
+            "item": "Ghee",
+            "portion": "15g",
+            "calories": 135.0
+          },
+          "vegetables": [
+            {
+              "item": "Tomato",
+              "portion": "50g",
+              "calories": 10.5
+            },
+            {
+              "item": "Green Bell Pepper",
+              "portion": "50g",
+              "calories": 11.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 36.8,
+          "fat_g": 42.2,
+          "carbs_g": 64.4,
+          "calories": 776.9
+        },
+        "tags": [
+          "universal",
+          "high protein",
+          "vegetarian"
+        ]
+      }
+    },
+    "totals": {
+      "calories": 2966.6,
+      "protein_g": 156.3,
+      "carbs_g": 342.5,
+      "fat_g": 99.4
+    },
+    "date": "Day 3"
+  },
+  {
+    "meals": {
+      "breakfast": {
+        "type": "Breakfast",
+        "components": {
+          "protein": {
+            "item": "Fava Beans (Foul)",
+            "portion": "154g",
+            "calories": 540.8
+          },
+          "carb": {
+            "item": "Pita Bread (Shami)",
+            "portion": "120g",
+            "calories": 333.6
+          },
+          "fat": {
+            "item": "Olive Oil",
+            "portion": "15g",
+            "calories": 135.0
+          },
+          "vegetables": [
+            {
+              "item": "Tomato",
+              "portion": "50g",
+              "calories": 10.5
+            },
+            {
+              "item": "Parsley",
+              "portion": "50g",
+              "calories": 22.0
+            }
+          ],
+          "fruits": [
+            {
+              "item": "Oranges",
+              "portion": "100g",
+              "calories": 52.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 53.6,
+          "fat_g": 20.5,
+          "carbs_g": 158.10000000000002,
+          "calories": 1093.9
+        },
+        "tags": [
+          "egyptian",
+          "plant-based",
+          "fiber-rich"
+        ]
+      },
+      "lunch": {
+        "type": "Lunch",
+        "components": {
+          "protein": {
+            "item": "Lentils",
+            "portion": "220g",
+            "calories": 794.2
+          },
+          "carb": {
+            "item": "Whole-Wheat Bread (Baladi)",
+            "portion": "120g",
+            "calories": 344.4
+          },
+          "fat": {
+            "item": "Olive Oil",
+            "portion": "30g",
+            "calories": 273.6
+          },
+          "vegetables": [
+            {
+              "item": "Tomato",
+              "portion": "50g",
+              "calories": 10.5
+            },
+            {
+              "item": "Cucumber",
+              "portion": "50g",
+              "calories": 6.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 65.8,
+          "fat_g": 42.0,
+          "carbs_g": 203.20000000000002,
+          "calories": 1428.6999999999998
+        },
+        "tags": [
+          "plant-based",
+          "egyptian",
+          "fiber"
+        ]
+      },
+      "dinner": {
+        "type": "Dinner",
+        "components": {
+          "protein": {
+            "item": "Talipa (Bulty) Fish",
+            "portion": "180g",
+            "calories": 171.0
+          },
+          "carb": {
+            "item": "White Rice",
+            "portion": "140g",
+            "calories": 488.5
+          },
+          "fat": {
+            "item": "Olive Oil",
+            "portion": "15g",
+            "calories": 135.0
+          },
+          "vegetables": [
+            {
+              "item": "Broccoli",
+              "portion": "50g",
+              "calories": 20.5
+            },
+            {
+              "item": "Carrot",
+              "portion": "50g",
+              "calories": 22.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 47.599999999999994,
+          "fat_g": 20.0,
+          "carbs_g": 112.3,
+          "calories": 837.0
+        },
+        "tags": [
+          "fish",
+          "classic",
+          "balanced"
+        ]
+      }
+    },
+    "totals": {
+      "calories": 3359.6,
+      "protein_g": 167.0,
+      "carbs_g": 473.6,
+      "fat_g": 82.5
+    },
+    "date": "Day 4"
+  },
+  {
+    "meals": {
+      "breakfast": {
+        "type": "Breakfast",
+        "components": {
+          "protein": {
+            "item": "Feta Cheese",
+            "portion": "120g",
+            "calories": 318.0
+          },
+          "carb": {
+            "item": "Multigrain Bread",
+            "portion": "160g",
+            "calories": 422.4
+          },
+          "fat": {
+            "item": "Olive Oil",
+            "portion": "15g",
+            "calories": 135.0
+          },
+          "vegetables": [
+            {
+              "item": "Tomato",
+              "portion": "50g",
+              "calories": 10.5
+            },
+            {
+              "item": "Green Bell Pepper",
+              "portion": "50g",
+              "calories": 11.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 40.4,
+          "fat_g": 49.4,
+          "carbs_g": 75.2,
+          "calories": 896.9
+        },
+        "tags": [
+          "mediterranean",
+          "vegetarian",
+          "balanced"
+        ]
+      },
+      "lunch": {
+        "type": "Lunch",
+        "components": {
+          "protein": {
+            "item": "Shrimp",
+            "portion": "220g",
+            "calories": 184.8
+          },
+          "carb": {
+            "item": "White Rice",
+            "portion": "187g",
+            "calories": 651.6
+          },
+          "fat": {
+            "item": "Vegetable Oil",
+            "portion": "30g",
+            "calories": 273.6
+          },
+          "vegetables": [
+            {
+              "item": "Green Bell Pepper",
+              "portion": "50g",
+              "calories": 11.0
+            },
+            {
+              "item": "Carrot",
+              "portion": "50g",
+              "calories": 22.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 59.300000000000004,
+          "fat_g": 34.5,
+          "carbs_g": 149.8,
+          "calories": 1143.0
+        },
+        "tags": [
+          "mediterranean",
+          "seafood",
+          "fresh"
+        ]
+      },
+      "dinner": {
+        "type": "Dinner",
+        "components": {
+          "protein": {
+            "item": "Chicken Breast",
+            "portion": "160g",
+            "calories": 171.2
+          },
+          "carb": {
+            "item": "Pita Bread (Shami)",
+            "portion": "130g",
+            "calories": 361.4
+          },
+          "fat": {
+            "item": "Olive Oil",
+            "portion": "15g",
+            "calories": 135.0
+          },
+          "vegetables": [
+            {
+              "item": "Lettuce",
+              "portion": "50g",
+              "calories": 8.5
+            },
+            {
+              "item": "Cucumber",
+              "portion": "50g",
+              "calories": 6.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 49.8,
+          "fat_g": 20.8,
+          "carbs_g": 72.8,
+          "calories": 682.0999999999999
+        },
+        "tags": [
+          "light",
+          "protein-rich",
+          "egyptian"
+        ]
+      }
+    },
+    "totals": {
+      "calories": 2722.0,
+      "protein_g": 149.5,
+      "carbs_g": 297.8,
+      "fat_g": 104.7
+    },
+    "date": "Day 5"
+  },
+  {
+    "meals": {
+      "breakfast": {
+        "type": "Breakfast",
+        "components": {
+          "protein": {
+            "item": "Greek Yogurt",
+            "portion": "120g",
+            "calories": 126.0
+          },
+          "carb": {
+            "item": "Oats",
+            "portion": "168g",
+            "calories": 665.4
+          },
+          "fat": {
+            "item": "Walnuts",
+            "portion": "15g",
+            "calories": 105.3
+          },
+          "fruits": [
+            {
+              "item": "Figs",
+              "portion": "100g",
+              "calories": 82.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 42.199999999999996,
+          "fat_g": 26.9,
+          "carbs_g": 130.0,
+          "calories": 978.6999999999999
+        },
+        "tags": [
+          "mediterranean",
+          "sweet",
+          "high protein"
+        ]
+      },
+      "lunch": {
+        "type": "Lunch",
+        "components": {
+          "protein": {
+            "item": "Turkey Breast",
+            "portion": "231g",
+            "calories": 249.3
+          },
+          "carb": {
+            "item": "White Rice",
+            "portion": "150g",
+            "calories": 522.0
+          },
+          "fat": {
+            "item": "Olive Oil",
+            "portion": "30g",
+            "calories": 273.6
+          },
+          "vegetables": [
+            {
+              "item": "Zucchini",
+              "portion": "50g",
+              "calories": 13.0
+            },
+            {
+              "item": "Carrot",
+              "portion": "50g",
+              "calories": 22.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 65.9,
+          "fat_g": 36.5,
+          "carbs_g": 122.3,
+          "calories": 1079.9
+        },
+        "tags": [
+          "high protein",
+          "light",
+          "universal"
+        ]
+      },
+      "dinner": {
+        "type": "Dinner",
+        "components": {
+          "protein": {
+            "item": "Shrimp",
+            "portion": "180g",
+            "calories": 151.2
+          },
+          "carb": {
+            "item": "White Rice",
+            "portion": "140g",
+            "calories": 488.5
+          },
+          "fat": {
+            "item": "Vegetable Oil",
+            "portion": "15g",
+            "calories": 135.0
+          },
+          "vegetables": [
+            {
+              "item": "Cabbage",
+              "portion": "50g",
+              "calories": 14.5
+            },
+            {
+              "item": "Carrot",
+              "portion": "50g",
+              "calories": 22.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 47.599999999999994,
+          "fat_g": 18.2,
+          "carbs_g": 112.3,
+          "calories": 811.2
+        },
+        "tags": [
+          "seafood",
+          "fresh",
+          "summer"
+        ]
+      }
+    },
+    "totals": {
+      "calories": 2869.8,
+      "protein_g": 155.7,
+      "carbs_g": 364.6,
+      "fat_g": 81.6
+    },
+    "date": "Day 6"
+  },
+  {
+    "meals": {
+      "breakfast": {
+        "type": "Breakfast",
+        "components": {
+          "protein": {
+            "item": "Greek Yogurt",
+            "portion": "120g",
+            "calories": 126.0
+          },
+          "carb": {
+            "item": "Oats",
+            "portion": "168g",
+            "calories": 665.4
+          },
+          "fat": {
+            "item": "Almonds",
+            "portion": "15g",
+            "calories": 93.0
+          },
+          "fruits": [
+            {
+              "item": "Strawberries",
+              "portion": "100g",
+              "calories": 36.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 43.099999999999994,
+          "fat_g": 24.5,
+          "carbs_g": 131.2,
+          "calories": 920.4
+        },
+        "tags": [
+          "sweet",
+          "high protein",
+          "fiber"
+        ]
+      },
+      "lunch": {
+        "type": "Lunch",
+        "components": {
+          "protein": {
+            "item": "Beef Steak",
+            "portion": "160g",
+            "calories": 264.0
+          },
+          "carb": {
+            "item": "Whole-Wheat Bread (Baladi)",
+            "portion": "180g",
+            "calories": 516.6
+          },
+          "fat": {
+            "item": "Olive Oil",
+            "portion": "30g",
+            "calories": 273.6
+          },
+          "vegetables": [
+            {
+              "item": "Lettuce",
+              "portion": "50g",
+              "calories": 8.5
+            },
+            {
+              "item": "Tomato",
+              "portion": "50g",
+              "calories": 10.5
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 49.8,
+          "fat_g": 57.2,
+          "carbs_g": 93.6,
+          "calories": 1073.2
+        },
+        "tags": [
+          "egyptian",
+          "protein-rich",
+          "balanced"
+        ]
+      },
+      "dinner": {
+        "type": "Dinner",
+        "components": {
+          "protein": {
+            "item": "Turkey Breast",
+            "portion": "160g",
+            "calories": 172.8
+          },
+          "carb": {
+            "item": "Pasta",
+            "portion": "130g",
+            "calories": 473.2
+          },
+          "fat": {
+            "item": "Olive Oil",
+            "portion": "15g",
+            "calories": 135.0
+          },
+          "vegetables": [
+            {
+              "item": "Zucchini",
+              "portion": "50g",
+              "calories": 13.0
+            },
+            {
+              "item": "Yellow Bell Pepper",
+              "portion": "50g",
+              "calories": 15.0
+            }
+          ]
+        },
+        "totals": {
+          "protein_g": 55.3,
+          "fat_g": 20.8,
+          "carbs_g": 99.1,
+          "calories": 809.0
+        },
+        "tags": [
+          "high protein",
+          "simple",
+          "universal"
+        ]
+      }
+    },
+    "totals": {
+      "calories": 2802.6,
+      "protein_g": 148.2,
+      "carbs_g": 323.9,
+      "fat_g": 102.5
+    },
+    "date": "Day 7"
+  }
+]

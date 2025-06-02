@@ -71,7 +71,7 @@ const Profile: React.FC = () => {
     e.preventDefault();
     setLoading(true);
     
-    // Save user profile
+    // Save user profile (using mock update for now)
     setTimeout(() => {
       if (formData) {
         setUser(formData);
@@ -124,35 +124,14 @@ const Profile: React.FC = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Age */}
                 <div>
-                  <label htmlFor="age" className="block text-sm font-medium text-gray-700">
-                    Age
-                  </label>
-                  <input
-                    type="number"
-                    name="age"
-                    id="age"
-                    min="10"
-                    max="100"
-                    value={formData.age}
-                    onChange={handleNumberChange}
-                    className="input-field mt-1"
-                    required
-                  />
+                  <label htmlFor="age" className="block text-sm font-medium text-gray-700">Age</label>
+                  <input type="number" name="age" id="age" min="10" max="100" value={formData.age} onChange={handleNumberChange} className="input-field mt-1" required />
                 </div>
 
                 {/* Gender */}
                 <div>
-                  <label htmlFor="gender" className="block text-sm font-medium text-gray-700">
-                    Gender
-                  </label>
-                  <select
-                    name="gender"
-                    id="gender"
-                    value={formData.gender}
-                    onChange={handleChange}
-                    className="input-field mt-1"
-                    required
-                  >
+                  <label htmlFor="gender" className="block text-sm font-medium text-gray-700">Gender</label>
+                  <select name="gender" id="gender" value={formData.gender} onChange={handleChange} className="input-field mt-1" required>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                     <option value="other">Other</option>
@@ -161,53 +140,20 @@ const Profile: React.FC = () => {
 
                 {/* Height */}
                 <div>
-                  <label htmlFor="height_cm" className="block text-sm font-medium text-gray-700">
-                    Height (cm)
-                  </label>
-                  <input
-                    type="number"
-                    name="height_cm"
-                    id="height_cm"
-                    min="100"
-                    max="250"
-                    value={formData.height_cm}
-                    onChange={handleNumberChange}
-                    className="input-field mt-1"
-                    required
-                  />
+                  <label htmlFor="height_cm" className="block text-sm font-medium text-gray-700">Height (cm)</label>
+                  <input type="number" name="height_cm" id="height_cm" min="100" max="250" value={formData.height_cm} onChange={handleNumberChange} className="input-field mt-1" required />
                 </div>
 
                 {/* Weight */}
                 <div>
-                  <label htmlFor="weight_kg" className="block text-sm font-medium text-gray-700">
-                    Weight (kg)
-                  </label>
-                  <input
-                    type="number"
-                    name="weight_kg"
-                    id="weight_kg"
-                    min="30"
-                    max="200"
-                    value={formData.weight_kg}
-                    onChange={handleNumberChange}
-                    className="input-field mt-1"
-                    required
-                  />
+                  <label htmlFor="weight_kg" className="block text-sm font-medium text-gray-700">Weight (kg)</label>
+                  <input type="number" name="weight_kg" id="weight_kg" min="30" max="200" value={formData.weight_kg} onChange={handleNumberChange} className="input-field mt-1" required />
                 </div>
 
                 {/* Activity Level */}
                 <div>
-                  <label htmlFor="activity_level" className="block text-sm font-medium text-gray-700">
-                    Activity Level
-                  </label>
-                  <select
-                    name="activity_level"
-                    id="activity_level"
-                    value={formData.activity_level}
-                    onChange={handleChange}
-                    className="input-field mt-1"
-                    required
-                  >
+                  <label htmlFor="activity_level" className="block text-sm font-medium text-gray-700">Activity Level</label>
+                  <select name="activity_level" id="activity_level" value={formData.activity_level} onChange={handleChange} className="input-field mt-1" required>
                     <option value="sedentary">Sedentary</option>
                     <option value="lightly active">Lightly Active</option>
                     <option value="moderately active">Moderately Active</option>
@@ -216,75 +162,37 @@ const Profile: React.FC = () => {
                   </select>
                 </div>
 
-                {/* Workout Days */}
+                {/* Workout Days (now 'days_per_week') */}
                 <div>
-                  <label htmlFor="workout_days_per_week" className="block text-sm font-medium text-gray-700">
-                    Workout Days Per Week
-                  </label>
-                  <input
-                    type="range"
-                    name="workout_days_per_week"
-                    id="workout_days_per_week"
-                    min="1"
-                    max="6"
-                    value={formData.workout_days_per_week}
-                    onChange={handleNumberChange}
-                    className="w-full mt-1"
-                    required
-                  />
-                  <div className="text-center mt-1">{formData.workout_days_per_week} days</div>
+                  <label htmlFor="days_per_week" className="block text-sm font-medium text-gray-700">Workout Days Per Week</label>
+                  <input type="range" name="days_per_week" id="days_per_week" min="1" max="6" value={formData.days_per_week} onChange={handleNumberChange} className="w-full mt-1" required />
+                  <div className="text-center mt-1">{formData.days_per_week} days</div>
                 </div>
 
-                {/* Fitness Level */}
+                {/* Fitness Level (now 'level') */}
                 <div>
-                  <label htmlFor="fitness_level" className="block text-sm font-medium text-gray-700">
-                    Fitness Level
-                  </label>
-                  <select
-                    name="fitness_level"
-                    id="fitness_level"
-                    value={formData.fitness_level}
-                    onChange={handleChange}
-                    className="input-field mt-1"
-                    required
-                  >
+                  <label htmlFor="level" className="block text-sm font-medium text-gray-700">Fitness Level</label>
+                  <select name="level" id="level" value={formData.level} onChange={handleChange} className="input-field mt-1" required>
                     <option value="beginner">Beginner</option>
                     <option value="intermediate">Intermediate</option>
                     <option value="advanced">Advanced</option>
                   </select>
                 </div>
 
-                {/* Primary Goal */}
+                {/* Primary Goal (now 'goal') */}
                 <div>
-                  <label htmlFor="primary_goal" className="block text-sm font-medium text-gray-700">
-                    Primary Fitness Goal
-                  </label>
-                  <select
-                    name="primary_goal"
-                    id="primary_goal"
-                    value={formData.primary_goal}
-                    onChange={handleChange}
-                    className="input-field mt-1"
-                    required
-                  >
+                  <label htmlFor="goal" className="block text-sm font-medium text-gray-700">Primary Fitness Goal</label>
+                  <select name="goal" id="goal" value={formData.goal} onChange={handleChange} className="input-field mt-1" required>
                     <option value="muscle gain">Muscle Gain</option>
                     <option value="fat loss">Fat Loss</option>
                     <option value="maintenance">Maintenance</option>
                   </select>
                 </div>
 
-                {/* Sub Goal */}
+                {/* Sub Goal (now 'subgoal') */}
                 <div>
-                  <label htmlFor="sub_goal" className="block text-sm font-medium text-gray-700">
-                    Specific Sub-Goal (Optional)
-                  </label>
-                  <select
-                    name="sub_goal"
-                    id="sub_goal"
-                    value={formData.sub_goal || ''}
-                    onChange={handleChange}
-                    className="input-field mt-1"
-                  >
+                  <label htmlFor="subgoal" className="block text-sm font-medium text-gray-700">Specific Sub-Goal (Optional)</label>
+                  <select name="subgoal" id="subgoal" value={formData.subgoal || ''} onChange={handleChange} className="input-field mt-1">
                     <option value="">Select a sub-goal</option>
                     <option value="hypertrophy">Hypertrophy</option>
                     <option value="strength">Strength</option>
@@ -295,19 +203,10 @@ const Profile: React.FC = () => {
                   </select>
                 </div>
 
-                {/* Meal Frequency */}
+                {/* Meal Frequency (now 'meal_frequency') */}
                 <div>
-                  <label htmlFor="preferred_meal_frequency" className="block text-sm font-medium text-gray-700">
-                    Preferred Meal Frequency
-                  </label>
-                  <select
-                    name="preferred_meal_frequency"
-                    id="preferred_meal_frequency"
-                    value={formData.preferred_meal_frequency}
-                    onChange={handleNumberChange}
-                    className="input-field mt-1"
-                    required
-                  >
+                  <label htmlFor="meal_frequency" className="block text-sm font-medium text-gray-700">Preferred Meal Frequency</label>
+                  <select name="meal_frequency" id="meal_frequency" value={formData.meal_frequency} onChange={handleNumberChange} className="input-field mt-1" required>
                     <option value={3}>3 meals per day</option>
                     <option value={4}>4 meals per day</option>
                   </select>
@@ -316,11 +215,12 @@ const Profile: React.FC = () => {
 
               {/* Available Equipment */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Available Equipment
-                </label>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Available Equipment</label>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
-                  {['assisted machine', 'barbell', 'bodyweight', 'cable', 'dumbbell', 'lever', 'machine', 'resistance band', 'smith machine'].map((equipment) => (
+                  {[
+                    'assisted machine', 'barbell', 'bodyweight', 'cable', 'dumbbell', 
+                    'lever', 'machine', 'resistance band', 'smith machine'
+                  ].map((equipment) => (
                     <div key={equipment} className="flex items-center">
                       <input
                         type="checkbox"
@@ -342,36 +242,16 @@ const Profile: React.FC = () => {
                 <h2 className="text-lg font-medium text-secondary-navy mb-4">Change Password</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="current_password" className="block text-sm font-medium text-gray-700">
-                      Current Password
-                    </label>
-                    <input
-                      type="password"
-                      id="current_password"
-                      className="input-field mt-1"
-                      placeholder="Enter current password"
-                    />
+                    <label htmlFor="current_password" className="block text-sm font-medium text-gray-700">Current Password</label>
+                    <input type="password" id="current_password" className="input-field mt-1" placeholder="Enter current password" />
                   </div>
                   <div>
-                    <label htmlFor="new_password" className="block text-sm font-medium text-gray-700">
-                      New Password
-                    </label>
-                    <input
-                      type="password"
-                      id="new_password"
-                      className="input-field mt-1"
-                      placeholder="Enter new password"
-                    />
+                    <label htmlFor="new_password" className="block text-sm font-medium text-gray-700">New Password</label>
+                    <input type="password" id="new_password" className="input-field mt-1" placeholder="Enter new password" />
                   </div>
                 </div>
                 <div className="mt-4">
-                  <button
-                    type="button"
-                    className="btn-secondary"
-                    onClick={() => alert('Password change feature is mocked for demo')}
-                  >
-                    Update Password
-                  </button>
+                  <button type="button" className="btn-secondary" onClick={() => alert('Password change feature is mocked for demo')}>Update Password</button>
                 </div>
               </div>
 
@@ -380,47 +260,22 @@ const Profile: React.FC = () => {
                 <h2 className="text-lg font-medium text-secondary-navy mb-4">Notification Preferences</h2>
                 <div className="space-y-3">
                   <div className="flex items-center">
-                    <input
-                      id="workout_reminders"
-                      type="checkbox"
-                      className="h-4 w-4 text-primary-blue focus:ring-primary-blue border-gray-300 rounded"
-                      defaultChecked
-                    />
-                    <label htmlFor="workout_reminders" className="ml-2 block text-sm text-gray-700">
-                      Workout Reminders
-                    </label>
+                    <input id="workout_reminders" type="checkbox" className="h-4 w-4 text-primary-blue focus:ring-primary-blue border-gray-300 rounded" defaultChecked />
+                    <label htmlFor="workout_reminders" className="ml-2 block text-sm text-gray-700">Workout Reminders</label>
                   </div>
                   <div className="flex items-center">
-                    <input
-                      id="meal_reminders"
-                      type="checkbox"
-                      className="h-4 w-4 text-primary-blue focus:ring-primary-blue border-gray-300 rounded"
-                      defaultChecked
-                    />
-                    <label htmlFor="meal_reminders" className="ml-2 block text-sm text-gray-700">
-                      Meal Reminders
-                    </label>
+                    <input id="meal_reminders" type="checkbox" className="h-4 w-4 text-primary-blue focus:ring-primary-blue border-gray-300 rounded" defaultChecked />
+                    <label htmlFor="meal_reminders" className="ml-2 block text-sm text-gray-700">Meal Reminders</label>
                   </div>
                   <div className="flex items-center">
-                    <input
-                      id="progress_updates"
-                      type="checkbox"
-                      className="h-4 w-4 text-primary-blue focus:ring-primary-blue border-gray-300 rounded"
-                      defaultChecked
-                    />
-                    <label htmlFor="progress_updates" className="ml-2 block text-sm text-gray-700">
-                      Weekly Progress Updates
-                    </label>
+                    <input id="progress_updates" type="checkbox" className="h-4 w-4 text-primary-blue focus:ring-primary-blue border-gray-300 rounded" defaultChecked />
+                    <label htmlFor="progress_updates" className="ml-2 block text-sm text-gray-700">Weekly Progress Updates</label>
                   </div>
                 </div>
               </div>
 
               <div className="flex justify-end">
-                <button
-                  type="submit"
-                  disabled={loading}
-                  className="btn-primary"
-                >
+                <button type="submit" disabled={loading} className="btn-primary">
                   {loading ? 'Saving...' : 'Save Changes'}
                 </button>
               </div>
@@ -436,18 +291,8 @@ const Profile: React.FC = () => {
             <h3 className="text-lg font-medium text-secondary-navy mb-4">Confirm Logout</h3>
             <p className="text-secondary-grey mb-6">Are you sure you want to log out of your FitGenie account?</p>
             <div className="flex justify-end space-x-3">
-              <button
-                onClick={() => setShowConfirm(false)}
-                className="btn-outline"
-              >
-                Cancel
-              </button>
-              <button
-                onClick={confirmLogout}
-                className="btn-primary"
-              >
-                Logout
-              </button>
+              <button onClick={() => setShowConfirm(false)} className="btn-outline">Cancel</button>
+              <button onClick={confirmLogout} className="btn-primary">Logout</button>
             </div>
           </div>
         </div>
@@ -457,3 +302,4 @@ const Profile: React.FC = () => {
 };
 
 export default Profile;
+

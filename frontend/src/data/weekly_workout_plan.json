@@ -10,7 +10,7 @@
     ],
     "workout": [
       {
-        "name": "machine shoulder press",
+        "name": "cable shoulder press",
         "sets": 3,
         "reps": "8-12",
         "note": "Perform first set as warm-up (reduced effort)."
@@ -31,7 +31,7 @@
         "reps": "8-12"
       },
       {
-        "name": "dumbbell front raise:  alternating",
+        "name": "cable front raise:  alternating",
         "sets": 3,
         "reps": "8-12"
       },
@@ -118,7 +118,7 @@
     ],
     "workout": [
       {
-        "name": "smith machine squat",
+        "name": "cable squat",
         "sets": 3,
         "reps": "8-12",
         "note": "Perform first set as warm-up (reduced effort)."

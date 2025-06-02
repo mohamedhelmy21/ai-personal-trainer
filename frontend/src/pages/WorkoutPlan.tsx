@@ -74,7 +74,7 @@ const WorkoutPlan: React.FC = () => {
       const response = await api.chat(
         sessionId,
         user,
-        { days: workoutPlan },
+        workoutPlan, // Pass the plan array directly
         chatInput,
         'workout',
         chatMessages
