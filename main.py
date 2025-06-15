@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from typing import List, Dict, Any, Optional, Literal
 from app.user import UserProfile
@@ -11,8 +12,18 @@ from app.rag_layer.meal_validator import validate_meal_plan as rag_validate_meal
 from app.rag_layer.workout_validator import validate_workout_plan as rag_validate_workout_plan
 from app.rag_layer.chatbot import chat
 import pandas as pd
+import json
 
 app = FastAPI(title="AI Personal Trainer API", description="Meal & Workout Plan Generation with RAG/Chatbot integration.")
+
+# CORS Middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allows all origins
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows all methods
+    allow_headers=["*"],  # Allows all headers
+)
 
 class ChatMessage(BaseModel):
     role: Literal["user", "assistant"]
@@ -21,7 +32,7 @@ class ChatMessage(BaseModel):
 class ChatRequest(BaseModel):
     session_id: str
     user: Dict[str, Any]
-    plan: Dict[str, Any]
+    plan: Optional[Dict[str, Any]] = Field(default_factory=dict)
     message: str
     history: List[ChatMessage] = Field(default_factory=list)
     plan_type: Literal["meal", "workout"]
@@ -48,11 +59,6 @@ class PlanRequest(BaseModel):
 class PlanValidationRequest(BaseModel):
     plan: Dict[str, Any]
     user: UserProfileIn
-
-class ChatRequest(BaseModel):
-    user: UserProfileIn
-    plan: Dict[str, Any]
-    message: str
 
 # --- Endpoints ---
 @app.post("/generate-meal-plan")
@@ -158,10 +164,31 @@ def validate_meal_plan(req: PlanValidationRequest):
 
 @app.post("/chat")
 def chat_with_trainer(req: ChatRequest):
+    current_plan = req.plan
+    # If plan is an empty dict (default_factory kicked in because it wasn't provided)
+    if not current_plan: 
+        plan_file_path = None
+        if req.plan_type == "workout":
+            plan_file_path = r"e:\ai-personal-trainer\output\weekly_workout_plan.json"
+        elif req.plan_type == "meal":
+            plan_file_path = r"e:\ai-personal-trainer\output\weekly_meal_plan.json"
+
+        if plan_file_path:
+            try:
+                with open(plan_file_path, "r") as f:
+                    current_plan = json.load(f)
+            except FileNotFoundError:
+                raise HTTPException(status_code=404, detail=f"Default {req.plan_type} plan file not found at {plan_file_path}")
+            except json.JSONDecodeError:
+                raise HTTPException(status_code=500, detail=f"Error decoding default {req.plan_type} plan from {plan_file_path}")
+        else:
+            # Fallback to an empty dict if plan_type is somehow neither, or if we decide not to load for some types
+            current_plan = {}
+
     reply, updated_plan, updated_history = chat(
         session_id=req.session_id,
         user_profile=req.user,
-        plan=req.plan,
+        plan=current_plan,  # Use the potentially loaded or original plan
         message=req.message,
         plan_type=req.plan_type,
     )
