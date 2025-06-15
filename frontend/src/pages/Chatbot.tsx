@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ReactMarkdown from 'react-markdown';
 import { useUser } from '../context/UserContext';
 import Header from '../components/layout/Header';
 import Layout from '../components/layout/Layout';
@@ -139,7 +140,13 @@ const Chatbot: React.FC = () => {
                           : 'bg-white border border-gray-200'
                       }`}
                     >
-                      <p className="text-sm">{message.content}</p>
+                      {message.role === 'assistant' ? (
+                        <div className="text-sm prose prose-sm max-w-none">
+                        <ReactMarkdown>{message.content}</ReactMarkdown>
+                      </div>
+                      ) : (
+                        <p className="text-sm">{message.content}</p>
+                      )}
                     </div>
                   </div>
                 ))}

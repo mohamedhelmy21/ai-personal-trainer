@@ -33,8 +33,8 @@ def _format_value_for_summary(value: Any) -> str:
     """Helper to format values for the diff summary, truncating long ones."""
     if isinstance(value, (dict, list)):
         s = json.dumps(value, indent=2)
-        if len(s) > 200:  # Max length for a complex value string
-            return s[:197] + "..."
+        if len(s) > 500:  # Max length for a complex value string
+            return s[:497] + "..."
         return s
     # For simple types, json.dumps adds quotes to strings, which is good.
     return json.dumps(value)
@@ -70,7 +70,7 @@ def make_diff_summary(original_plan: Dict, patch: List[Dict]) -> str:
         current_op_summary = ""
 
         if op_type == 'add':
-            current_op_summary = f"Add/Set at '{path}': {_format_value_for_summary(new_value_from_op)}"
+            current_op_summary = f"Set value at '{path}' to: {_format_value_for_summary(new_value_from_op)}"
             try:
                 # Check if path existed to clarify if it's a pure add or a replace via 'add' op
                 pointer = jsonpatch.JsonPointer(path)
@@ -301,9 +301,9 @@ def chat(session_id: str, user_profile: Dict[str, Any], plan: Dict[str, Any], me
         # Retrieve RAG context only if the intent requires it (currently 'info')
         if intent == "info":
             if plan_type == "meal":
-                context = retrieve_context(message, get_meal_vector_db(), top_k=3)
+                context = retrieve_context(message, get_meal_vector_db(), plan_type, top_k=3)
             else:
-                context = retrieve_context(message, get_workout_vector_db(), top_k=3)
+                context = retrieve_context(message, get_workout_vector_db(), plan_type, top_k=3)
 
         if intent == "clarify":
             prompt = CHATBOT_CLARIFY_PROMPT.format(

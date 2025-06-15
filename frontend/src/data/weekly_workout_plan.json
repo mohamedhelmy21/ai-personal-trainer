@@ -10,7 +10,7 @@
     ],
     "workout": [
       {
-        "name": "cable shoulder press",
+        "name": "dumbbell shoulder press",
         "sets": 3,
         "reps": "8-12",
         "note": "Perform first set as warm-up (reduced effort)."
@@ -46,7 +46,7 @@
         "reps": "8-12"
       },
       {
-        "name": "[Cardio Add-On] LISS 30 mins",
+        "name": "LISS 30 mins",
         "sets": "",
         "reps": ""
       }
@@ -118,7 +118,7 @@
     ],
     "workout": [
       {
-        "name": "cable squat",
+        "name": "barbell squat",
         "sets": 3,
         "reps": "8-12",
         "note": "Perform first set as warm-up (reduced effort)."
@@ -139,7 +139,7 @@
         "reps": "8-12"
       },
       {
-        "name": "barbell standing calf raise",
+        "name": "smith machine standing calf raise",
         "sets": 3,
         "reps": "8-12"
       },

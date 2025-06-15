@@ -21,9 +21,9 @@
           },
           "fruits": [
             {
-              "item": "Figs",
+              "item": "Bananas",
               "portion": "100g",
-              "calories": 82.0
+              "calories": 98.0
             }
           ]
         },
@@ -31,7 +31,7 @@
           "protein_g": 42.199999999999996,
           "fat_g": 26.9,
           "carbs_g": 130.0,
-          "calories": 978.6999999999999
+          "calories": 994.6999999999999
         },
         "tags": [
           "mediterranean",
@@ -53,7 +53,7 @@
             "calories": 522.0
           },
           "fat": {
-            "item": "Sunflower Oil",
+            "item": "Olive Oil",
             "portion": "30g",
             "calories": 273.6
           },

@@ -130,7 +130,7 @@ def embed_and_index_chunks(
     if index_exists and hash_matches:
         try:
             # Only load, never recompute embeddings if cache is valid!
-            vector_db = FAISS.load_local(index_path, embeddings_model)
+            vector_db = FAISS.load_local(index_path, embeddings_model, allow_dangerous_deserialization=True)
             print(f"[RAG] FAISS index and doc hash match: loaded index from {index_path}")
             print(f"[RAG] [CACHE-HIT] {datetime.now().isoformat()}")
             return vector_db
@@ -164,19 +164,34 @@ def _hash_path(index_path: str) -> str:
     return index_path + ".hash"
 
 # --- 4. Retrieve Context ---
-def retrieve_context(query: str, vector_db, top_k: int = 3) -> str:
+def retrieve_context(query: str, vector_db, plan_type: str, top_k: int = 3) -> str:
     """
     Retrieve top_k relevant chunks from the vector DB for the given query.
-    Uses disk-based caching for retrieval results.
+    Uses disk-based caching for retrieval results, specific to plan_type.
     """
-    cache_path = "data/retrieval_cache"
-    cached = cache_retrieval_results(query, None, cache_path, mode='load')
+    # Sanitize plan_type to ensure it's a valid directory name component
+    safe_plan_type = "".join(c if c.isalnum() else "_" for c in plan_type.lower())
+    cache_dir = os.path.join("data", "retrieval_cache", safe_plan_type)
+    
+    # Ensure the plan-specific cache directory exists
+    os.makedirs(cache_dir, exist_ok=True)
+
+    # The cache_retrieval_results function expects a full path for the cache file itself,
+    # not just a directory. We'll create a unique filename within this directory based on the query.
+    # For simplicity, let's assume cache_retrieval_results handles creating a file within cache_dir.
+    # If cache_retrieval_results expects cache_path to be a file, this needs adjustment.
+    # For now, passing cache_dir, assuming cache_retrieval_results appends a query-specific filename.
+    # Re-evaluating: cache_retrieval_results likely takes the *directory* and manages files within it.
+    # The original call was cache_retrieval_results(query, None, "data/retrieval_cache", mode='load')
+    # This implies "data/retrieval_cache" was the directory.
+
+    cached = cache_retrieval_results(query, None, cache_dir, mode='load')
     if cached is not None:
         return cached
     try:
         docs_and_scores = vector_db.similarity_search_with_score(query, k=top_k)
         context = '\n---\n'.join([doc[0].page_content for doc in docs_and_scores])
-        cache_retrieval_results(query, context, cache_path, mode='save')
+        cache_retrieval_results(query, context, cache_dir, mode='save')
         return context
     except Exception as e:
         raise RuntimeError(f"Context retrieval failed: {e}")

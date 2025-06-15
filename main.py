@@ -185,13 +185,32 @@ def chat_with_trainer(req: ChatRequest):
             # Fallback to an empty dict if plan_type is somehow neither, or if we decide not to load for some types
             current_plan = {}
 
+    original_plan_for_comparison = json.loads(json.dumps(current_plan)) # Deep copy for accurate comparison
+
     reply, updated_plan, updated_history = chat(
         session_id=req.session_id,
         user_profile=req.user,
-        plan=current_plan,  # Use the potentially loaded or original plan
+        plan=current_plan,  # Pass the loaded or provided plan to the chat logic
         message=req.message,
         plan_type=req.plan_type,
     )
+
+    # Check if the plan was modified and the operation was likely successful
+    if updated_plan != original_plan_for_comparison and "[ERROR:" not in reply:
+        save_file_path = None
+        if req.plan_type == "workout":
+            save_file_path = r"e:\ai-personal-trainer\output\weekly_workout_plan.json"
+        elif req.plan_type == "meal":
+            save_file_path = r"e:\ai-personal-trainer\output\weekly_meal_plan.json"
+
+        if save_file_path:
+            try:
+                with open(save_file_path, "w") as f:
+                    json.dump(updated_plan, f, indent=4) # Save with pretty print
+                print(f"Successfully updated mock {req.plan_type} plan at {save_file_path}") # Server log
+            except Exception as e:
+                print(f"[ERROR] Failed to save updated mock plan to {save_file_path}: {e}") # Log error, but don't fail the request
+
     return {
         "response": reply,
         "plan": updated_plan,
