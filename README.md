@@ -1,10 +1,9 @@
-# AI Personal Trainer – Modular RAG API
+ # AI Personal Trainer for Fitness & Nutrition Planning
 
-A robust, modular API for meal and workout plan generation, validation, and refinement using Retrieval-Augmented Generation (RAG) and OpenAI.
+## Overview
 
----
+The AI Personal Trainer is an end-to-end system that generates personalized workout and meal plans, with a strong emphasis on nutritional accuracy, scientific validity, and cultural relevance—especially for Egyptian and Mediterranean users. The system combines a deterministic rule-based engine with a Retrieval-Augmented Generation (RAG) layer powered by a Large Language Model (LLM), and provides an interactive chatbot interface for plan refinement and user education.
 
-## Features
 
 - **Modular structure** for easy maintenance and extension
 - **RAG backend** for validating and refining plans using external knowledge
